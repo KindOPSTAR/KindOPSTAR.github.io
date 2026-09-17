@@ -1,0 +1,873 @@
+{
+  "publications": [
+    {
+      "id": "pub-c14",
+      "title": "VR Calm Plus: Coupling a Squeezable Tangible Interaction with Immersive VR for Stress Regulation",
+      "kind": "[c.14] · Conference paper · 2026",
+      "authors": "Zhang, H., Li, X., Zhou, X., & Fu, X.",
+      "venue": "CHI 2026",
+      "note": "A 40-participant study of tangible interaction and immersive VR, examining positive affect and perceived relaxation.",
+      "url": "https://doi.org/10.1145/3772318.3790548",
+      "tags": [
+        "VR",
+        "embodiment",
+        "affective computing"
+      ],
+      "selected": true
+    },
+    {
+      "id": "pub-demo1",
+      "title": "Wolfborn: Silent Emotional Catharsis and Empathy via Pseudo-Vocalized Embodiment",
+      "kind": "[demo.1] · Demonstration · 2026",
+      "authors": "Zhou, X., Zhang, H., Han, Y., Gao, H., Fu, X., & Zhao, S.",
+      "venue": "DIS 2026 Companion · first author is an undergraduate mentee",
+      "note": "Pseudo-vocalized embodiment lets someone express and discharge emotion without making a sound — catharsis routed through the body instead of the voice.",
+      "url": "https://doi.org/10.1145/3802974.3808033",
+      "tags": [
+        "embodiment",
+        "affective computing",
+        "VR"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-p10",
+      "title": "PromptShield Home: Ambient Multimodal Prompt Injection Defense for Smart-Home Agents✦",
+      "kind": "[p.10] · Poster / extended abstract · 2026",
+      "authors": "Zhang, H., Li, F., Long, D., Cui, Y., Zhang, P., Zhang, Y., Xu, Q., & Fu, X.",
+      "venue": "ACM UbiComp 2026 Companion · led a five-student team across five institutions",
+      "note": "Ambient prompt injection is a new attack surface — text printed on a box in the kitchen can hijack a home agent. This builds and evaluates a defence against it.",
+      "url": "",
+      "tags": [
+        "AI safety",
+        "agentic AI",
+        "smart home"
+      ],
+      "selected": true
+    },
+    {
+      "id": "pub-p7",
+      "title": "AIoT Smart Home Automation Architecture: Autonomous Decision-Making Powered by Multimodal Large Language Models",
+      "kind": "[p.7] · Poster / extended abstract · 2026",
+      "authors": "Zhang, H., Zhang, Y., Li, B., Chen, W., Liu, Y., Xu, Q., & Fu, X.",
+      "venue": "IUI 2026 Companion",
+      "note": "Hands domestic decision-making to a multimodal LLM and asks what an autonomous home-agent architecture actually needs to be safe to run.",
+      "url": "https://doi.org/10.1145/3742414.3794710",
+      "tags": [
+        "smart home",
+        "agentic AI",
+        "multimodal"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-tut1",
+      "title": "AI4Qual: A Comprehensive Field Guide to LLM-Supported Qualitative Research",
+      "kind": "[tut.1] · Tutorial · 2026",
+      "authors": "Zhang, H., Cai, J., Xie, J., Wu, C., Kim, C., & Carroll, J. M.",
+      "venue": "Tutorial, IUI 2026, Limassol · lead organizer and instructor",
+      "note": "Turns the whole research programme into something teachable — the practices and failure modes, not just the findings.",
+      "url": "https://doi.org/10.1145/3742414.3794947",
+      "tags": [
+        "AI4Qual",
+        "education"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c9",
+      "title": "Augmenting Image Annotation: A Human–LMM Collaborative Framework for Efficient Object Selection and Label Generation",
+      "kind": "[c.9] · Conference paper · 2025",
+      "authors": "Zhang, H., Fu, X., & Carroll, J. M.",
+      "venue": "ICLR 2025 Workshop on Bidirectional Human–AI Alignment · Oral at CHI ’25",
+      "note": "A division of labour for annotation: the model proposes objects and labels, the human arbitrates — faster and better calibrated than either alone.",
+      "url": "https://openreview.net/pdf?id=ZPTvEUXzSq",
+      "tags": [
+        "LLM evaluation",
+        "multimodal"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-p4",
+      "title": "Enhancing the Travel Experience for People with Visual Impairments through Multimodal Interaction: NaviGPT, A Real-Time AI-Driven Mobile Navigation System",
+      "kind": "[p.4] · Poster / extended abstract · 2025",
+      "authors": "Zhang, H., Falletta, N. J., Xie, J., Yu, R., Lee, S., Billah, S. M., & Carroll, J. M.",
+      "venue": "GROUP 2025 Companion",
+      "note": "Puts real-time multimodal AI into the travel loop for blind users, testing whether the latency and the language hold up outdoors rather than on a bench.",
+      "url": "https://doi.org/10.1145/3688828.3699636",
+      "tags": [
+        "accessibility",
+        "multimodal",
+        "agentic AI"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-p6",
+      "title": "VR Calm+: Furry Stress Ball as a Haptic Modality for Relaxation in Virtual Reality",
+      "kind": "[p.6] · Poster / extended abstract · 2025",
+      "authors": "Zhang, H.*, Li, X.*, Zhou, X., & Fu, X.",
+      "venue": "IEEE ISMAR-Adjunct 2025",
+      "note": "Adds a furry stress ball as a haptic channel in VR — physical squeezing as a relaxation modality rather than one more screen affordance.",
+      "url": "https://doi.org/10.1109/ISMAR-Adjunct68609.2025.00128",
+      "tags": [
+        "VR",
+        "embodiment",
+        "affective computing"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c4",
+      "title": "VRMN-bD: A Multimodal Natural Behavior Dataset of Immersive Human Fear Responses in VR Stand-up Interactive Games✦",
+      "kind": "[c.4] · Conference paper · 2024",
+      "authors": "Zhang, H., Li, X., Sun, Y., Fu, X., Qiu, C., & Carroll, J. M.",
+      "venue": "IEEE VR 2024",
+      "note": "A multimodal dataset of natural fear behaviour — pose, physiology, gaze — captured in stand-up VR rather than staged lab conditions, plus a benchmark on top of it.",
+      "url": "https://doi.org/10.1109/VR58804.2024.00054",
+      "tags": [
+        "affective computing",
+        "VR",
+        "multimodal"
+      ],
+      "selected": true
+    },
+    {
+      "id": "pub-c6",
+      "title": "BubbleCam: Engaging Privacy in Remote Sighted Assistance",
+      "kind": "[c.6] · Conference paper · 2024",
+      "authors": "Xie, J., Yu, R., Zhang, H., Lee, S., Billah, S. M., & Carroll, J. M.",
+      "venue": "CHI 2024",
+      "note": "Privacy in remote sighted assistance is a framing problem, not a blurring problem: the user decides what enters the shared bubble.",
+      "url": "https://doi.org/10.1145/3613904.3642030",
+      "tags": [
+        "accessibility",
+        "privacy"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-arx2",
+      "title": "QualiGPT: GPT as an Easy-to-Use Tool for Qualitative Coding",
+      "kind": "[arXiv.2] · Preprint · 2023",
+      "authors": "Zhang, H., Wu, C., Xie, J., Kim, C., & Carroll, J. M.",
+      "venue": "arXiv:2310.07061",
+      "note": "Packages GPT into a purpose-built coding tool, so the question stops being “ChatGPT versus a human” and becomes a question about tool design.",
+      "url": "https://arxiv.org/abs/2310.07061",
+      "tags": [
+        "AI4Qual",
+        "LLM evaluation"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-p1",
+      "title": "Multi-channel Sensor Network Construction, Data Fusion and Challenges for Smart Home",
+      "kind": "[p.1] · Poster / extended abstract · 2023",
+      "authors": "Zhang, H., Ananda, R., Fu, X., Sun, Z., Wang, X., Chen, K., & Carroll, J. M.",
+      "venue": "ChCHI 2023",
+      "note": "Multi-channel sensing and fusion in a real home — RGB, depth, IR, audio, gait — with an honest account of what breaks at petabyte scale.",
+      "url": "https://doi.org/10.1145/3629606.3629638",
+      "tags": [
+        "smart home",
+        "multimodal"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-pat1",
+      "title": "A Human-Machine Interaction System for Smart Home Environments, and Its Application Method",
+      "kind": "[pat.1] · Patent · 2023",
+      "authors": "Fu, X., Xu, Y.-Q., Zhang, H., Xue, C., Sun, Z., Gao, Y., & He, S.",
+      "venue": "Patent, China, CN115291718A",
+      "note": "The human–machine interaction layer for the smart-home environment, filed as a patent.",
+      "url": "https://patents.google.com/patent/CN115291718A/en",
+      "tags": [
+        "smart home"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-j1",
+      "title": "Design Research and Application Practice of Integrated Experimental Platform for Smart Home",
+      "kind": "[j.1] · Journal article · 2022",
+      "authors": "Fu, X., Zhang, H., Xue, C., Li, X., Sun, Z., & Xu, Y.-Q.",
+      "venue": "Packaging Engineering, 43(16), 2022",
+      "note": "The instrumented smart-home platform everything downstream runs on — sensing hardware, capture pipeline, and the experimental protocol around it.",
+      "url": "https://link.oversea.cnki.net/doi/10.19554/j.cnki.1001-3563.2022.16.005",
+      "tags": [
+        "smart home",
+        "multimodal"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-pat2",
+      "title": "Smart Home Comprehensive Experiment System and Data Processing Method",
+      "kind": "[pat.2] · Patent · 2022",
+      "authors": "Fu, X., Xu, Y.-Q., Zhang, H., Xue, C., He, S., Sun, Z., & Gao, Y.",
+      "venue": "Patent, China, 2022-09",
+      "note": "The testbed and its data-processing method, filed as a patent.",
+      "url": "",
+      "tags": [
+        "smart home"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c15",
+      "title": "Comparative Analysis of Human vs. AI-powered Support in VRChat Communities on Discord: User Engagement, Response Dynamics and Interaction Patterns",
+      "kind": "[c.15] · Conference paper · 2026",
+      "authors": "Zhang, H., Kim, B., Carroll, J. M., & Cai, J.",
+      "venue": "IMX 2026",
+      "note": "Human and AI-powered support in the same communities, side by side: engagement, response dynamics, and what changes in the exchange itself.",
+      "url": "https://doi.org/10.1145/3788851.3805015",
+      "tags": [
+        "social computing",
+        "agentic AI"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c16",
+      "title": "Twitch Third-Party Developers’ Support Seeking and Provision Practices on Discord",
+      "kind": "[c.16] · Conference paper · 2026",
+      "authors": "Cai, J., Zhang, H., Liu, Y., Carroll, J. M., & Yu, C.",
+      "venue": "CSCW 2026",
+      "note": "Where third-party developers go for help and how they give it — the support economy underneath the tooling economy.",
+      "url": "https://doi.org/10.1145/3817021",
+      "tags": [
+        "social computing"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c17",
+      "title": "When the Interviewer Is a Bot: Behavior, Breakdowns, and Trust in MLLM-Led Interviews✦",
+      "kind": "[c.17] · Conference paper · 2026",
+      "authors": "Zhang, H., Chukwuma, K., Kim, C., & Carroll, J. M.",
+      "venue": "HCOMP 2026",
+      "note": "When the interviewer is a machine, disclosure changes shape — what participants tell a bot, what they withhold, and how breakdowns erode trust mid-interview.",
+      "url": "",
+      "tags": [
+        "AI4Qual",
+        "trust",
+        "agentic AI"
+      ],
+      "selected": true
+    },
+    {
+      "id": "pub-arx1",
+      "title": "“Learning Together”: AI-Mediated Support for Parental Involvement in Everyday Learning",
+      "kind": "[arXiv.1] · Preprint · 2025",
+      "authors": "Li, Y., Xie, J., Ling, Y. F., Zhang, H., Wang, G., Huang, G., Yu, R., & Chen, S.",
+      "venue": "arXiv:2510.20123",
+      "note": "AI-mediated support for parents helping children learn — the mediation sits between two people, not between a person and a task.",
+      "url": "https://arxiv.org/abs/2510.20123",
+      "tags": [
+        "education",
+        "social computing"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c11",
+      "title": "Exploring Inductive and Deductive Qualitative Coding with AI: Investigating Inter-Rater Reliability between Large Language Model and Human Coders",
+      "kind": "[c.11] · Conference paper · 2025",
+      "authors": "Zhang, H., Wu, C., Xie, J., Rubino, F., Graver, S., Cai, J., Kim, C., & Carroll, J. M.",
+      "venue": "AHFE 2025",
+      "note": "Measures human–LLM inter-rater reliability across both inductive and deductive coding, separating real agreement from coincidental agreement.",
+      "url": "",
+      "tags": [
+        "AI4Qual",
+        "LLM evaluation"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c12",
+      "title": "Zero-shot Emotion Annotation in Facial Images Using Large Multimodal Models: Benchmarking and Prospects for Multi-Class, Multi-Frame Approaches✦",
+      "kind": "[c.12] · Conference paper · 2025",
+      "authors": "Zhang, H., & Fu, X.",
+      "venue": "MRAC 2025",
+      "note": "Benchmarks what general-purpose multimodal models can and cannot infer about emotion from faces — the empirical ceiling for a technology already deployed in hiring and education.",
+      "url": "https://doi.org/10.1145/3746270.3760233",
+      "tags": [
+        "affective computing",
+        "LLM evaluation",
+        "multimodal"
+      ],
+      "selected": true
+    },
+    {
+      "id": "pub-c8",
+      "title": "Beyond Visual Perception: Insights from Smartphone Interaction of Visually Impaired Users with Large Multimodal Models",
+      "kind": "[c.8] · Conference paper · 2025",
+      "authors": "Xie, J., Yu, R., Zhang, H., Billah, S. M., Lee, S., & Carroll, J. M.",
+      "venue": "CHI 2025",
+      "note": "Interaction traces of visually impaired users with LMMs — what they ask, what they trust, and where perception-first design assumptions fail them.",
+      "url": "https://doi.org/10.1145/3706598.3714210",
+      "tags": [
+        "accessibility",
+        "multimodal",
+        "LLM evaluation"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-j5",
+      "title": "Harnessing the Power of AI in Qualitative Research: Exploring, Using and Redesigning ChatGPT✦",
+      "kind": "[j.5] · Journal article · 2025",
+      "authors": "Zhang, H., Wu, C., Xie, J., Lyu, Y., Cai, J., & Carroll, J. M.",
+      "venue": "Computers in Human Behavior: Artificial Humans, 2025",
+      "note": "Traces the full arc from exploring ChatGPT, to using it on live projects, to redesigning it — and shows trust is negotiated at the point of re-scoping, not at first contact.",
+      "url": "https://doi.org/10.1016/j.chbah.2025.100144",
+      "tags": [
+        "AI4Qual",
+        "trust",
+        "LLM evaluation"
+      ],
+      "selected": true
+    },
+    {
+      "id": "pub-p5",
+      "title": "Generative AI in Virtual Reality Communities: A Preliminary Analysis of the VRChat Discord Community",
+      "kind": "[p.5] · Poster / extended abstract · 2025",
+      "authors": "Zhang, H., Zha, S., Cai, J., Wohn, D. Y., & Carroll, J. M.",
+      "venue": "CHI EA 2025",
+      "note": "First look at how an established VR community absorbs generative AI into its everyday support practices.",
+      "url": "https://doi.org/10.1145/3706599.3720120",
+      "tags": [
+        "social computing",
+        "VR"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-arx3",
+      "title": "Emerging Practices for Large Multimodal Model (LMM) Assistance for People with Visual Impairments: Implications for Design",
+      "kind": "[arXiv.3] · Preprint · 2024",
+      "authors": "Xie, J., Yu, R., Zhang, H., Lee, S., Billah, S. M., & Carroll, J. M.",
+      "venue": "arXiv:2407.08882",
+      "note": "Documents the practices blind users were already inventing around LMM assistants, well ahead of any design guidance existing for them.",
+      "url": "https://arxiv.org/abs/2407.08882",
+      "tags": [
+        "accessibility",
+        "multimodal"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-arx4",
+      "title": "When Qualitative Research Meets Large Language Model: Exploring the Potential of QualiGPT as a Tool for Qualitative Coding",
+      "kind": "[arXiv.4] · Preprint · 2024",
+      "authors": "Zhang, H., Wu, C., Xie, J., Rubino, F., Graver, S., Kim, C., Carroll, J. M., & Cai, J.",
+      "venue": "arXiv:2407.14925",
+      "note": "Puts QualiGPT in front of working researchers and reports where it saves labour and where they refuse to delegate.",
+      "url": "https://arxiv.org/abs/2407.14925",
+      "tags": [
+        "AI4Qual",
+        "LLM evaluation"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c5",
+      "title": "Third-Party Developers and Tool Development for Community Management on Live Streaming Platform Twitch",
+      "kind": "[c.5] · Conference paper · 2024",
+      "authors": "Cai, J., Lin, Y., Zhang, H., & Carroll, J. M.",
+      "venue": "CHI 2024 Best Paper Honorable Mention",
+      "note": "Community management on Twitch runs on tools built by unpaid third-party developers — the platform depends on labour it does not acknowledge.",
+      "url": "https://doi.org/10.1145/3613904.3642787",
+      "tags": [
+        "social computing"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-j3",
+      "title": "Understanding Fear Responses and Coping Mechanisms in VR Horror Gaming: Insights from Semi-Structured Interviews",
+      "kind": "[j.3] · Journal article · 2024",
+      "authors": "Zhang, H., Li, X., Fu, X., Qiu, C., Zhang, J., & Carroll, J. M.",
+      "venue": "IEEE Transactions on Games, 2024",
+      "note": "How players actually cope with fear in VR — the reasons behind the signals that VRMN-bD records.",
+      "url": "https://doi.org/10.1109/TG.2024.3403768",
+      "tags": [
+        "affective computing",
+        "VR"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-p3",
+      "title": "A Preliminary Exploration of YouTubers’ Use of Generative AI in Content Creation",
+      "kind": "[p.3] · Poster / extended abstract · 2024",
+      "authors": "Lyu, Y., Zhang, H., Niu, S., & Cai, J.",
+      "venue": "CHI EA 2024",
+      "note": "How creators fold generative AI into production, and how much of that they choose to show their audience.",
+      "url": "https://doi.org/10.1145/3613905.3651057",
+      "tags": [
+        "social computing"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c2",
+      "title": "Reconnecting An International Travel Network: The Personal Infrastructuring Work of International Travelers in A Multi-facet Crisis",
+      "kind": "[c.2] · Conference paper · 2023",
+      "authors": "Lyu, Y., Zhang, H., & Carroll, J. M.",
+      "venue": "ChCHI 2023",
+      "note": "International travellers rebuilt a broken travel network through personal infrastructuring work — labour that was invisible, uncompensated, and load-bearing.",
+      "url": "https://doi.org/10.1145/3629606.3629655",
+      "tags": [
+        "social computing"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-j2",
+      "title": "A Review of the Frontier Research on Future Smart Home",
+      "kind": "[j.2] · Journal article · 2023",
+      "authors": "Fu, X., Zhang, H., Xue, C., Sun, T., & Xu, Y.-Q.",
+      "venue": "Science & Technology Review, 41(8), 2023",
+      "note": "Maps the frontier of smart-home research and locates the open problems — the survey that framed the later agent work.",
+      "url": "https://doi.org/10.3981/j.issn.1000-7857.2023.08.004",
+      "tags": [
+        "smart home"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-p2",
+      "title": "Decoding Fear: Exploring User Experiences in Virtual Reality Horror Games",
+      "kind": "[p.2] · Poster / extended abstract · 2023",
+      "authors": "Zhang, H., Li, X., Qiu, C., & Fu, X.",
+      "venue": "ChCHI 2023",
+      "note": "First pass at what fear feels like from inside a VR horror game, in players’ own accounts — the study that motivated collecting the signals.",
+      "url": "https://doi.org/10.1145/3629606.3629646",
+      "tags": [
+        "affective computing",
+        "VR"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c1",
+      "title": "Tips, Tidings, and Tech: Governmental Communication on Facebook During the COVID-19 Pandemic",
+      "kind": "[c.1] · Conference paper · 2022",
+      "authors": "Haq, E. U., Braud, T., Lee, L. H., Mogavi, R. H., Zhang, H., & Hui, P.",
+      "venue": "DG.O 2022",
+      "note": "Regression modelling and multilingual sentiment analysis on official pandemic messaging — which forms of government communication actually landed.",
+      "url": "https://doi.org/10.1145/3543434.3543642",
+      "tags": [
+        "social computing"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c13",
+      "title": "Understanding Parents’ Perspectives on Responsible AI for Children’s Self-Directed Learning",
+      "kind": "[c.13] · Conference paper · 2026",
+      "authors": "Xie, J., Wu, C., Wang, G., Yu, R., Zhang, H., Metoyer, R., & Chen, S.",
+      "venue": "CHI 2026",
+      "note": "Parents’ own criteria for responsible AI in children’s learning, which do not line up neatly with published responsible-AI principles.",
+      "url": "https://doi.org/10.48550/arXiv.2510.24070",
+      "tags": [
+        "education",
+        "trust"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-p8",
+      "title": "Communicating AI Uncertainty in Assistive Navigation for People with Visual Impairments",
+      "kind": "[p.8] · Poster / extended abstract · 2026",
+      "authors": "Shaffer, H., Shaikh, A., Zhang, H., & Xie, J.",
+      "venue": "ASPIRE · 69th HFES Annual Meeting, 2026",
+      "note": "An assistive navigator that hides its uncertainty is more dangerous than one that admits it; this asks how a system should say “I am not sure” usefully.",
+      "url": "",
+      "tags": [
+        "accessibility",
+        "trust"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-p9",
+      "title": "Ethics and Social Responsibility in AI-Assisted Interviewing: An LLM-in-the-Loop Study of AI-Generated Follow-Up Questions",
+      "kind": "[p.9] · Poster / extended abstract · 2026",
+      "authors": "Zhang, H., Liu, Y., Guan, X., Cai, J., & Carroll, J. M.",
+      "venue": "CHIWORK Adjunct 2026",
+      "note": "AI-generated follow-up questions are where interviewing ethics concentrate — what an LLM in the loop should and should not be permitted to ask.",
+      "url": "https://doi.org/10.1145/3805029.3818282",
+      "tags": [
+        "AI4Qual",
+        "trust"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c10",
+      "title": "AI Trust Reshaping Administrative Burdens: Understanding Trust-Burden Dynamics in LLM-Assisted Benefits Systems",
+      "kind": "[c.10] · Conference paper · 2025",
+      "authors": "Jo, J., Zhang, H., Cai, J., & Goyal, N.",
+      "venue": "FAccT 2025",
+      "note": "Trust and administrative burden are coupled: an LLM assistant can cut learning costs in a benefits system while quietly relocating burden somewhere else.",
+      "url": "https://doi.org/10.1145/3715275.3732077",
+      "tags": [
+        "trust",
+        "social computing"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c3",
+      "title": "Exploring Virtual Reality through Ihde’s Instrumental Realism",
+      "kind": "[c.3] · Conference paper · 2024",
+      "authors": "Zhang, H., & Carroll, J. M.",
+      "venue": "iConference 2024",
+      "note": "Reads VR through Ihde: the headset is not a window but a mediating instrument, and that reframing changes what counts as a faithful experience.",
+      "url": "https://doi.org/10.1007/978-3-031-57860-1_6",
+      "tags": [
+        "VR",
+        "embodiment"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-c7",
+      "title": "The Future of Learning: Large Language Models through the Lens of Students",
+      "kind": "[c.7] · Conference paper · 2024",
+      "authors": "Zhang, H., Xie, J., Wu, C., Cai, J., Kim, C., & Carroll, J. M.",
+      "venue": "SIGITE 2024",
+      "note": "LLMs in education from the students’ side rather than the institution’s — what they use them for, and what they think it is costing them.",
+      "url": "https://doi.org/10.1145/3686852.3687069",
+      "tags": [
+        "education",
+        "LLM evaluation"
+      ],
+      "selected": false
+    },
+    {
+      "id": "pub-j4",
+      "title": "AI Governance in Higher Education: Case Studies of Guidance at Big Ten Universities",
+      "kind": "[j.4] · Journal article · 2024",
+      "authors": "Wu, C., Zhang, H., & Carroll, J. M.",
+      "venue": "Future Internet, 16(10), 2024",
+      "note": "Compares AI guidance across Big Ten universities; the governance gap sits between policy language and instructional practice, not in the absence of policy.",
+      "url": "https://doi.org/10.3390/fi16100354",
+      "tags": [
+        "trust",
+        "education"
+      ],
+      "selected": false
+    }
+  ],
+  "topics": [
+    {
+      "title": "AI4Qual",
+      "description": "This is the dissertation. Researchers were already pasting confidential interview transcripts into ChatGPT before anyone had established whether that was defensible. I started by building the tool that made the question answerable, then spent three years finding out what actually happens: where an LLM's codes agree with a human's and where the agreement is coincidental, how trust gets renegotiated the moment a researcher re-scopes the model, and what changes when the machine stops assisting the interview and starts conducting it."
+    },
+    {
+      "title": "Affective computing",
+      "description": "I build the emotion-inference pipelines that privacy and ethics scholarship needs to interrogate from the inside. It began with fear in VR horror games — an emotion strong enough to show up unambiguously in pose, physiology, and gaze — and produced a dataset of natural rather than staged behaviour. From there the question inverted twice: first, can a general-purpose multimodal model read emotion off a face without training, and where does it fail? Then, having measured affect thoroughly, can a physical object regulate it rather than only record it?"
+    },
+    {
+      "title": "Ambient agents & AI safety",
+      "description": "Instrumenting a home to study it and giving that home an autonomous agent turn out to be the same engineering problem approached from opposite ends. At Tsinghua I built the multi-sensor testbed and the petabyte-scale pipeline behind it, which is also direct experience with the data-collection infrastructure that makes domestic privacy a live question. Years later, when multimodal models became capable enough to make decisions in that space, the obvious next question was adversarial: a home agent reads the room, and the room can be written on."
+    },
+    {
+      "title": "Accessibility",
+      "description": "Camera-mediated assistance is where interpretation and privacy collide most directly: to get help seeing, a blind user has to let someone — or something — look at their room. BubbleCam reframed that as a scoping decision rather than a blurring problem. When large multimodal models arrived, blind users adopted them faster than the design literature could keep up, so the next studies documented practice first and derived implications second. NaviGPT tested whether any of it survives contact with a real street, and the current work is about the hardest interface problem in the set: how a system that might be wrong should say so."
+    },
+    {
+      "title": "Social computing",
+      "description": "A recurring finding across these studies is that the systems people depend on are held together by labour nobody is paying for. Government pandemic messaging worked or failed on form, not just content. Stranded travellers rebuilt an entire route network through personal infrastructuring. Twitch's community-management stack is built by unpaid third-party developers, and those developers in turn run their own support economy on Discord. Generative AI is now entering all of it, which makes the comparison I care about tractable: put human and AI-powered support side by side in the same community and see what changes."
+    },
+    {
+      "title": "Trust, governance & education",
+      "description": "The consequences arm of everything above. Universities wrote AI guidance quickly; the gap turned out to be between the policy language and what happens in a classroom, so the next study asked students rather than administrators. In public benefits, an LLM assistant does reduce the cost of learning a system — and relocates burden somewhere the evaluation was not looking. Parents applying their own responsible-AI criteria to children's learning do not reproduce the principles that published frameworks assume. Running under all of it is a philosophical commitment I made explicit early: an interpreting system is an instrument, and instruments mediate rather than transmit."
+    }
+  ],
+  "about": [
+    "01 — Research statement",
+    "I am He “Albert” Zhang, a fifth-year Ph.D. candidate in Informatics at the College of Information Sciences and Technology, Penn State University, advised by Distinguished Prof. John M. Carroll, and a student member of the Center for Socially Responsible Artificial Intelligence.",
+    "I build and empirically evaluate LLM- and LMM-based systems that infer meaning from sensitive material — qualitative interview transcripts, facial and physiological affect signals, ambient multimodal home sensing, and camera-mediated assistance for people with visual impairments — and I study how those systems reshape trust, disclosure, control, and agency for the people whose data they process.",
+    "When an AI system mediates the interpretation of personal experience, who retains control over what is inferred, retained, and disclosed?",
+    "I answer that in three registers at once — I build the systems, I study what people do with them, and I follow what that does downstream. Every paper below sits in one of the three.",
+    "My dissertation, Integrating Large Language Models into the Qualitative Research Process, takes that question where it bites hardest: qualitative research, where scholars routinely route confidential participant data through commercial models. I work closely with Prof. Syed M. Billah, Prof. ChanMin Kim, and Prof. Xinyi Fu. In 2025 the college named me the recipient of the IST Ph.D. Student Award for Research Excellence.",
+    "Before Penn State I spent a year as a full-time research assistant at The Future Laboratory, an interdisciplinary HCI lab at Tsinghua University, building the multimodal affect and smart-home testbeds that much of my systems work still draws on. I hold an M.Sc. in Computer and Mathematical Sciences with first-class honours from Auckland University of Technology (2021) and a B.Sc. with a double major in Computer Science and Data Science from Massey University (2019), both in New Zealand. On the industry side I have worked on applied LLM systems at Genentech and on large-scale behavioural modelling at Experian, Callaghan Innovation, and HKUST’s SyMLab.",
+    "Human-Centered AI · Human–AI Interaction · Trustworthy and Responsible AI · LLM/LMM Evaluation and Human Oversight · Affective Computing · Multimodal and Agentic Systems · CSCW · Accessibility · Ubiquitous Computing"
+  ],
+  "news": [
+    {
+      "date": "Aug 2026",
+      "text": "I’ll serve as Associate Chair for the CHI 2027 Full Paper Track."
+    },
+    {
+      "date": "Jul 2026",
+      "text": "I designed and taught AI4Qual, a full tutorial on LLM-supported qualitative research, at IUI 2026 in Limassol, and presented our AIoT home-agent architecture in the companion track."
+    },
+    {
+      "date": "Jul 2026",
+      "text": "PromptShield Home was accepted to UbiComp 2026; I’ll present it in Shanghai in October. I led the five-student team across five institutions."
+    },
+    {
+      "date": "Jun 2026",
+      "text": "Our demo Wolfborn was presented at DIS 2026 in Singapore — first-authored by an undergraduate I mentored from the ground up. [demo.1]"
+    },
+    {
+      "date": "Jun 2026",
+      "text": "I presented our comparison of human versus AI-powered support in VRChat communities at IMX 2026 in Athlone."
+    },
+    {
+      "date": "Apr 2026",
+      "text": "I presented VR Calm Plus at CHI 2026 in Barcelona — the third iteration of a tangible-plus-VR system built with two undergraduate mentees."
+    },
+    {
+      "date": "2026",
+      "text": "Two more acceptances: HCOMP on MLLM-led interviews and CSCW on Twitch developers, both presenting this autumn."
+    },
+    {
+      "date": "2026",
+      "text": "I was named runner-up for the IST Award for Excellence in Teaching Support."
+    },
+    {
+      "date": "Dec 2025",
+      "text": "I wrapped up an AI internship at Genentech, building and evaluating LLM systems with the Product and Data Science group."
+    },
+    {
+      "date": "Oct 2025",
+      "text": "I chaired a paper session at CSCW 2025 in Bergen, and presented two pieces of the affect work — VR Calm+ at ISMAR and our zero-shot facial emotion benchmark at MRAC."
+    },
+    {
+      "date": "Jun 2025",
+      "text": "AI Trust Reshaping Administrative Burdens appeared at FAccT 2025."
+    },
+    {
+      "date": "2025",
+      "text": "I received the Ph.D. Student Award for Research Excellence and the Alumni Association Graduate Fellowship."
+    },
+    {
+      "date": "Apr 2025",
+      "text": "Two at CHI 2025 in Yokohama — smartphone interaction of blind users with LMMs, and generative AI in the VRChat Discord community — plus an oral on our human–LMM annotation framework."
+    },
+    {
+      "date": "Jan 2025",
+      "text": "NaviGPT was presented at GROUP 2025 — real-time multimodal navigation for people with visual impairments."
+    },
+    {
+      "date": "May 2024",
+      "text": "Our Twitch third-party developer study received a Best Paper Honorable Mention at CHI 2024, in the top 3.7% of 4,028 submissions."
+    },
+    {
+      "date": "Mar 2024",
+      "text": "VRMN-bD, our multimodal fear-response dataset, was presented at IEEE VR 2024."
+    },
+    {
+      "date": "2023",
+      "text": "I joined a Big Ideas Grant seed award at Penn State as co-principal investigator."
+    }
+  ],
+  "mentoring": {
+    "paragraphs": [
+      "Since 2021 I have recruited and mentored 31 students — 18 undergraduate, 12 master’s, 1 research assistant — across 14 institutions in China, the United States, the United Kingdom, and Hong Kong, including four supervised through the Penn State IST Summer Intern program.",
+      "They joined as research interns on 12 projects I initiated and led, where I set the research questions, directed study and system design, supervised data collection and analysis, and mentored manuscript preparation. 21 mentees have co-authored peer-reviewed papers with me — several as second author, one as co-first author, and one I mentored all the way to first authorship. Five have stayed with me across multiple projects."
+    ],
+    "items": [
+      {
+        "when": "2026",
+        "what": "AI4Qual, IUI 2026",
+        "det": "Lead organizer and instructor, full tutorial, Limassol, Cyprus · July 2026"
+      },
+      {
+        "when": "2025 – 2026",
+        "what": "Invited guest lecturer",
+        "det": "5 lectures at 4 institutions across 3 countries — Penn State, San José State, Tsinghua, FGV EBAPE (Brazil)"
+      },
+      {
+        "when": "2025 – 2026",
+        "what": "DS 435: Data Ethics",
+        "det": "Teaching assistant — Spring 2025, Fall 2025, Fall 2026"
+      },
+      {
+        "when": "2022 – 2023",
+        "what": "IST 302 · IST 402",
+        "det": "IT Project Management; Data, Environment, and Society"
+      },
+      {
+        "when": "2026",
+        "what": "Runner-up, IST Award for Excellence in Teaching Support",
+        "det": ""
+      }
+    ]
+  },
+  "service": {
+    "paragraphs": [],
+    "items": [
+      {
+        "when": "2027",
+        "what": "ACM CHI",
+        "det": "Associate Chair, Full Paper Track"
+      },
+      {
+        "when": "2026",
+        "what": "ACM CHI · ACM CSCW",
+        "det": "Associate Chair, Poster Tracks"
+      },
+      {
+        "when": "2025",
+        "what": "ACM CHI · ACM CSCW",
+        "det": "AC for User Experience and Usability and for Late-Breaking Work; Ninja AC, Paper Track, and AC, Poster Track"
+      },
+      {
+        "when": "2025",
+        "what": "Program committee",
+        "det": "ICHEC · ICLR Workshop on Bidirectional Human–AI Alignment · LAW at NeurIPS"
+      },
+      {
+        "when": "2024",
+        "what": "Program committee",
+        "det": "ACM Learning at Scale"
+      },
+      {
+        "when": "2022 – 2024",
+        "what": "Program committee",
+        "det": "ChCHI · ACII · DG.O"
+      },
+      {
+        "when": "2025",
+        "what": "Session chair",
+        "det": "CSCW 2025, Bergen — Making Work Meetings Better. CHI 2025, Yokohama — Co-ideation; Creativity Support"
+      },
+      {
+        "when": "2022 – 2026",
+        "what": "Conference reviewer",
+        "det": "ACM CHI, CSCW, UIST, DIS, HCOMP, L@S, SIGGRAPH, Multimedia, MobileHCI, UbiComp/IMWUT, VRST, CHI PLAY, ASSETS · AAAI, COLM, ICLR and NeurIPS workshops · IEEE VR, ISMAR, ISWC · AIS ICIS"
+      },
+      {
+        "when": "2023 – 2026",
+        "what": "Journal reviewer",
+        "det": "IJHCI · Computers in Human Behavior and CHB Reports · Sociological Methods and Research · International Journal of Qualitative Methods · Policy Studies Journal · Journal of Learning Analytics · Multimedia Tools and Applications · Cogent Arts & Humanities"
+      },
+      {
+        "when": "2024 – 2026",
+        "what": "Special Recognition for Outstanding Reviews",
+        "det": "CHI ’24, ’25, ’26 · CSCW ’24, ’25"
+      },
+      {
+        "when": "2024 – 2026",
+        "what": "Student volunteer",
+        "det": "ACM IMX 2026 · CHI 2025 · UIST 2024"
+      },
+      {
+        "when": "2026 –",
+        "what": "Board member, ICACHI",
+        "det": "International Chinese Association of Computer Human Interaction"
+      }
+    ]
+  },
+  "metrics": {
+    "citations": 1170,
+    "hIndex": 14,
+    "i10Index": 17,
+    "asOf": "2026-09",
+    "source": "He_Zhang_Albert_CV_Sep_2026.pdf",
+    "citationsApproximate": true,
+    "i10AsOf": "2026-08-20"
+  },
+  "links": {
+    "email": "hpz5211@psu.edu",
+    "directory": "https://ist.psu.edu/directory/hpz5211",
+    "scholar": "https://scholar.google.com/citations?user=MgxFi7QAAAAJ&hl=en",
+    "linkedin": "https://www.linkedin.com/in/he-albert-zhang/",
+    "github": "https://github.com/KindOPSTAR"
+  },
+  "projects": [
+    {
+      "id": "project-vbc",
+      "title": "Variable-Binding Violations in LLM Reasoning",
+      "kind": "Research project · Under review · 2026",
+      "authors": "He “Albert” Zhang — Initiator and Lead",
+      "venue": "VBC-Bench · Manuscript under review",
+      "note": "A benchmark and validated judge for cross-step consistency errors in LLM reasoning. Evaluates how injected variable-binding violations change correct solutions, and explores verifier guards and detect-and-correct distillation.",
+      "url": "",
+      "tags": [
+        "reasoning",
+        "LLM evaluation",
+        "AI safety"
+      ],
+      "selected": false
+    }
+  ],
+  "experience": [
+    {
+      "when": "Jun–Dec 2025",
+      "what": "Genentech",
+      "role": "Research Intern · AI, Product and Data Science",
+      "det": "Designed and evaluated applied LLM solutions, built ML data pipelines, and worked with research, engineering, and business teams."
+    },
+    {
+      "when": "Jun–Aug 2024",
+      "what": "Experian",
+      "role": "Data Scientist Intern · Innovation Lab",
+      "det": "Developed features for credit-scoring models and migrated an ML pipeline across computational environments."
+    },
+    {
+      "when": "Nov 2020–Jan 2021",
+      "what": "Harmoney & Callaghan Innovation",
+      "role": "Data Scientist Intern / Research Fellow",
+      "det": "Built behavioral risk-prediction workflows, NLP pipelines, and a BERT-based question-answering model."
+    }
+  ],
+  "education": [
+    {
+      "when": "2022–Present",
+      "what": "Ph.D. in Informatics",
+      "det": "The Pennsylvania State University · Advisor: John M. Carroll"
+    },
+    {
+      "when": "2020–2021",
+      "what": "M.S. in Computer and Mathematical Sciences",
+      "det": "Auckland University of Technology · First-Class Honors"
+    },
+    {
+      "when": "2016–2019",
+      "what": "B.S. in Computer Science and Data Science",
+      "det": "Massey University · Double major"
+    }
+  ],
+  "awards": [
+    {
+      "when": "2025",
+      "what": "Ph.D. Student Award for Research Excellence",
+      "det": "Penn State College of Information Sciences and Technology"
+    },
+    {
+      "when": "2024",
+      "what": "CHI Best Paper Honorable Mention",
+      "det": "Third-Party Developers and Tool Development for Community Management on Twitch · Top 3.7% of submissions"
+    },
+    {
+      "when": "2023",
+      "what": "Big Ideas Grant · Co-Principal Investigator",
+      "det": "Penn State · $49,935 seed funding"
+    },
+    {
+      "when": "2025–2026",
+      "what": "Alumni Association Graduate Fellowship",
+      "det": "$5,000"
+    },
+    {
+      "when": "2021",
+      "what": "Callaghan Innovation R&D Fellowship",
+      "det": "NZD $7,625"
+    },
+    {
+      "when": "2026",
+      "what": "IST Award for Excellence in Teaching Support",
+      "det": "Runner-up · Penn State"
+    }
+  ]
+}

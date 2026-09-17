@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {traceLineage} from '../lib/research-graph.ts';
+const graph=JSON.parse(readFileSync(new URL('../data/research-map.json',import.meta.url)));
+const profile=JSON.parse(readFileSync(new URL('../data/profile.json',import.meta.url)));
+test('every work has a unique map node and all edges refer to known works',()=>{const works=[...profile.publications,...profile.projects];assert.equal(graph.nodes.length,works.length);assert.equal(new Set(graph.nodes.map(n=>n.key)).size,works.length);for(const n of graph.nodes){assert.ok(works.some(p=>p.id===n.publicationId));assert.ok(['sys','evd','con'].includes(n.arc));}for(const e of graph.edges){assert.ok(graph.nodes.some(n=>n.key===e.from));assert.ok(graph.nodes.some(n=>n.key===e.to));}});
+test('lineage follows direction without incorrectly including sibling branches',()=>{const result=traceLineage('b',[{from:'a',to:'b'},{from:'a',to:'sibling'},{from:'b',to:'c'}]);assert.deepEqual([...result.ancestors],['a']);assert.deepEqual([...result.descendants],['c']);});
+test('cycles terminate and do not include selected node in its own lineage',()=>{const r=traceLineage('a',[{from:'a',to:'b'},{from:'b',to:'a'}]);assert.deepEqual([...r.ancestors],['b']);assert.deepEqual([...r.descendants],['b']);});
+test('the new under-review project has no invented causal edges',()=>{const r=traceLineage('project-vbc',graph.edges);assert.equal(r.ancestors.size+r.descendants.size,0)});

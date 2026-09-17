@@ -1,0 +1,692 @@
+{
+  "nodes": [
+    {
+      "key": "j.1",
+      "tags": [
+        "home",
+        "multimodal"
+      ],
+      "arc": "sys",
+      "label": "Home platform",
+      "x": 336.0,
+      "y": 118.0,
+      "color": "#1F7A6B",
+      "publicationId": "pub-j1"
+    },
+    {
+      "key": "pat.2",
+      "tags": [
+        "home"
+      ],
+      "arc": "sys",
+      "label": "Patent: testbed",
+      "x": 336.0,
+      "y": 159.0,
+      "color": "#1F7A6B",
+      "publicationId": "pub-pat2"
+    },
+    {
+      "key": "arXiv.2",
+      "tags": [
+        "qual",
+        "llmeval"
+      ],
+      "arc": "sys",
+      "label": "QualiGPT",
+      "x": 552.0,
+      "y": 98.0,
+      "color": "#5B3FBF",
+      "publicationId": "pub-arx2"
+    },
+    {
+      "key": "p.1",
+      "tags": [
+        "home",
+        "multimodal"
+      ],
+      "arc": "sys",
+      "label": "Sensor network",
+      "x": 552.0,
+      "y": 138.0,
+      "color": "#1F7A6B",
+      "publicationId": "pub-p1"
+    },
+    {
+      "key": "pat.1",
+      "tags": [
+        "home"
+      ],
+      "arc": "sys",
+      "label": "Patent: interaction",
+      "x": 552.0,
+      "y": 180.0,
+      "color": "#1F7A6B",
+      "publicationId": "pub-pat1"
+    },
+    {
+      "key": "c.4",
+      "tags": [
+        "affect",
+        "vr",
+        "multimodal"
+      ],
+      "arc": "sys",
+      "label": "VRMN-bD",
+      "x": 768.0,
+      "y": 118.0,
+      "color": "#C2426B",
+      "publicationId": "pub-c4"
+    },
+    {
+      "key": "c.6",
+      "tags": [
+        "access",
+        "privacy"
+      ],
+      "arc": "sys",
+      "label": "BubbleCam",
+      "x": 768.0,
+      "y": 159.0,
+      "color": "#B4711A",
+      "publicationId": "pub-c6"
+    },
+    {
+      "key": "c.9",
+      "tags": [
+        "llmeval",
+        "multimodal"
+      ],
+      "arc": "sys",
+      "label": "Image annotation",
+      "x": 984.0,
+      "y": 98.0,
+      "color": "#5B3FBF",
+      "publicationId": "pub-c9"
+    },
+    {
+      "key": "p.6",
+      "tags": [
+        "vr",
+        "embodiment",
+        "affect"
+      ],
+      "arc": "sys",
+      "label": "VR Calm+",
+      "x": 984.0,
+      "y": 180.0,
+      "color": "#C2426B",
+      "publicationId": "pub-p6"
+    },
+    {
+      "key": "p.4",
+      "tags": [
+        "access",
+        "multimodal",
+        "agents"
+      ],
+      "arc": "sys",
+      "label": "NaviGPT",
+      "x": 984.0,
+      "y": 138.0,
+      "color": "#B4711A",
+      "publicationId": "pub-p4"
+    },
+    {
+      "key": "c.14",
+      "tags": [
+        "vr",
+        "embodiment",
+        "affect"
+      ],
+      "arc": "sys",
+      "label": "VR Calm Plus",
+      "x": 1200.0,
+      "y": 56.0,
+      "color": "#C2426B",
+      "publicationId": "pub-c14"
+    },
+    {
+      "key": "demo.1",
+      "tags": [
+        "embodiment",
+        "affect",
+        "vr"
+      ],
+      "arc": "sys",
+      "label": "Wolfborn",
+      "x": 1200.0,
+      "y": 98.0,
+      "color": "#C2426B",
+      "publicationId": "pub-demo1"
+    },
+    {
+      "key": "p.7",
+      "tags": [
+        "home",
+        "agents",
+        "multimodal"
+      ],
+      "arc": "sys",
+      "label": "AIoT home agent",
+      "x": 1200.0,
+      "y": 180.0,
+      "color": "#1F7A6B",
+      "publicationId": "pub-p7"
+    },
+    {
+      "key": "p.10",
+      "tags": [
+        "safety",
+        "agents",
+        "home"
+      ],
+      "arc": "sys",
+      "label": "PromptShield Home",
+      "x": 1200.0,
+      "y": 138.0,
+      "color": "#1F7A6B",
+      "publicationId": "pub-p10"
+    },
+    {
+      "key": "tut.1",
+      "tags": [
+        "qual",
+        "edu"
+      ],
+      "arc": "sys",
+      "label": "AI4Qual",
+      "x": 1200.0,
+      "y": 220.0,
+      "color": "#5B3FBF",
+      "publicationId": "pub-tut1"
+    },
+    {
+      "key": "c.1",
+      "tags": [
+        "social"
+      ],
+      "arc": "evd",
+      "label": "Gov. communication",
+      "x": 336.0,
+      "y": 396.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-c1"
+    },
+    {
+      "key": "p.2",
+      "tags": [
+        "affect",
+        "vr"
+      ],
+      "arc": "evd",
+      "label": "Decoding Fear",
+      "x": 552.0,
+      "y": 437.0,
+      "color": "#C2426B",
+      "publicationId": "pub-p2"
+    },
+    {
+      "key": "c.2",
+      "tags": [
+        "social"
+      ],
+      "arc": "evd",
+      "label": "Travel network",
+      "x": 552.0,
+      "y": 355.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-c2"
+    },
+    {
+      "key": "j.2",
+      "tags": [
+        "home"
+      ],
+      "arc": "evd",
+      "label": "Smart-home review",
+      "x": 552.0,
+      "y": 396.0,
+      "color": "#1F7A6B",
+      "publicationId": "pub-j2"
+    },
+    {
+      "key": "arXiv.4",
+      "tags": [
+        "qual",
+        "llmeval"
+      ],
+      "arc": "evd",
+      "label": "QualiGPT in use",
+      "x": 768.0,
+      "y": 355.0,
+      "color": "#5B3FBF",
+      "publicationId": "pub-arx4"
+    },
+    {
+      "key": "j.3",
+      "tags": [
+        "affect",
+        "vr"
+      ],
+      "arc": "evd",
+      "label": "Fear & coping",
+      "x": 768.0,
+      "y": 437.0,
+      "color": "#C2426B",
+      "publicationId": "pub-j3"
+    },
+    {
+      "key": "c.5",
+      "tags": [
+        "social"
+      ],
+      "arc": "evd",
+      "label": "Twitch tool devs",
+      "x": 768.0,
+      "y": 396.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-c5"
+    },
+    {
+      "key": "p.3",
+      "tags": [
+        "social"
+      ],
+      "arc": "evd",
+      "label": "YouTubers & GenAI",
+      "x": 768.0,
+      "y": 478.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-p3"
+    },
+    {
+      "key": "arXiv.3",
+      "tags": [
+        "access",
+        "multimodal"
+      ],
+      "arc": "evd",
+      "label": "LMM practices",
+      "x": 768.0,
+      "y": 314.0,
+      "color": "#B4711A",
+      "publicationId": "pub-arx3"
+    },
+    {
+      "key": "j.5",
+      "tags": [
+        "qual",
+        "trust",
+        "llmeval"
+      ],
+      "arc": "evd",
+      "label": "AI in qual. work",
+      "x": 984.0,
+      "y": 458.0,
+      "color": "#5B3FBF",
+      "publicationId": "pub-j5"
+    },
+    {
+      "key": "c.11",
+      "tags": [
+        "qual",
+        "llmeval"
+      ],
+      "arc": "evd",
+      "label": "Coding reliability",
+      "x": 984.0,
+      "y": 334.0,
+      "color": "#5B3FBF",
+      "publicationId": "pub-c11"
+    },
+    {
+      "key": "c.12",
+      "tags": [
+        "affect",
+        "llmeval",
+        "multimodal"
+      ],
+      "arc": "evd",
+      "label": "Face emotion + LMM",
+      "x": 984.0,
+      "y": 376.0,
+      "color": "#C2426B",
+      "publicationId": "pub-c12"
+    },
+    {
+      "key": "c.8",
+      "tags": [
+        "access",
+        "multimodal",
+        "llmeval"
+      ],
+      "arc": "evd",
+      "label": "BVI & LMM use",
+      "x": 984.0,
+      "y": 416.0,
+      "color": "#B4711A",
+      "publicationId": "pub-c8"
+    },
+    {
+      "key": "p.5",
+      "tags": [
+        "social",
+        "vr"
+      ],
+      "arc": "evd",
+      "label": "VRChat Discord",
+      "x": 984.0,
+      "y": 498.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-p5"
+    },
+    {
+      "key": "arXiv.1",
+      "tags": [
+        "edu",
+        "social"
+      ],
+      "arc": "evd",
+      "label": "Learning Together",
+      "x": 984.0,
+      "y": 294.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-arx1"
+    },
+    {
+      "key": "c.17",
+      "tags": [
+        "qual",
+        "trust",
+        "agents"
+      ],
+      "arc": "evd",
+      "label": "Bot interviewer",
+      "x": 1200.0,
+      "y": 437.0,
+      "color": "#5B3FBF",
+      "publicationId": "pub-c17"
+    },
+    {
+      "key": "c.15",
+      "tags": [
+        "social",
+        "agents"
+      ],
+      "arc": "evd",
+      "label": "Human vs. AI help",
+      "x": 1200.0,
+      "y": 355.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-c15"
+    },
+    {
+      "key": "c.16",
+      "tags": [
+        "social"
+      ],
+      "arc": "evd",
+      "label": "Twitch devs II",
+      "x": 1200.0,
+      "y": 396.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-c16"
+    },
+    {
+      "key": "j.4",
+      "tags": [
+        "trust",
+        "edu"
+      ],
+      "arc": "con",
+      "label": "AI governance",
+      "x": 768.0,
+      "y": 654.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-j4"
+    },
+    {
+      "key": "c.3",
+      "tags": [
+        "vr",
+        "embodiment"
+      ],
+      "arc": "con",
+      "label": "Instrumental realism",
+      "x": 768.0,
+      "y": 572.0,
+      "color": "#C2426B",
+      "publicationId": "pub-c3"
+    },
+    {
+      "key": "c.7",
+      "tags": [
+        "edu",
+        "llmeval"
+      ],
+      "arc": "con",
+      "label": "Students & LLMs",
+      "x": 768.0,
+      "y": 612.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-c7"
+    },
+    {
+      "key": "c.10",
+      "tags": [
+        "trust",
+        "social"
+      ],
+      "arc": "con",
+      "label": "Trust & burden",
+      "x": 984.0,
+      "y": 612.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-c10"
+    },
+    {
+      "key": "p.9",
+      "tags": [
+        "qual",
+        "trust"
+      ],
+      "arc": "con",
+      "label": "Follow-up ethics",
+      "x": 1200.0,
+      "y": 654.0,
+      "color": "#5B3FBF",
+      "publicationId": "pub-p9"
+    },
+    {
+      "key": "c.13",
+      "tags": [
+        "edu",
+        "trust"
+      ],
+      "arc": "con",
+      "label": "Parents & RAI",
+      "x": 1200.0,
+      "y": 572.0,
+      "color": "#2E6FB7",
+      "publicationId": "pub-c13"
+    },
+    {
+      "key": "p.8",
+      "tags": [
+        "access",
+        "trust"
+      ],
+      "arc": "con",
+      "label": "AI uncertainty",
+      "x": 1200.0,
+      "y": 612.0,
+      "color": "#B4711A",
+      "publicationId": "pub-p8"
+    },
+    {
+      "key": "project-vbc",
+      "tags": [
+        "reasoning",
+        "llmeval",
+        "safety"
+      ],
+      "arc": "sys",
+      "label": "VBC-Bench",
+      "x": 1200,
+      "y": 250,
+      "color": "#8A79E8",
+      "publicationId": "project-vbc"
+    }
+  ],
+  "edges": [
+    {
+      "from": "arXiv.2",
+      "to": "arXiv.4"
+    },
+    {
+      "from": "arXiv.4",
+      "to": "j.5"
+    },
+    {
+      "from": "j.5",
+      "to": "c.11"
+    },
+    {
+      "from": "c.11",
+      "to": "tut.1"
+    },
+    {
+      "from": "j.5",
+      "to": "c.17"
+    },
+    {
+      "from": "c.17",
+      "to": "p.9"
+    },
+    {
+      "from": "j.5",
+      "to": "c.9"
+    },
+    {
+      "from": "c.9",
+      "to": "c.12"
+    },
+    {
+      "from": "j.5",
+      "to": "c.10"
+    },
+    {
+      "from": "c.9",
+      "to": "p.4"
+    },
+    {
+      "from": "p.2",
+      "to": "c.4"
+    },
+    {
+      "from": "p.2",
+      "to": "c.3"
+    },
+    {
+      "from": "c.4",
+      "to": "j.3"
+    },
+    {
+      "from": "j.3",
+      "to": "p.6"
+    },
+    {
+      "from": "p.6",
+      "to": "c.14"
+    },
+    {
+      "from": "c.14",
+      "to": "demo.1"
+    },
+    {
+      "from": "c.4",
+      "to": "c.12"
+    },
+    {
+      "from": "j.1",
+      "to": "j.2"
+    },
+    {
+      "from": "j.1",
+      "to": "pat.2"
+    },
+    {
+      "from": "j.1",
+      "to": "p.1"
+    },
+    {
+      "from": "p.1",
+      "to": "pat.1"
+    },
+    {
+      "from": "p.1",
+      "to": "p.7"
+    },
+    {
+      "from": "p.7",
+      "to": "p.10"
+    },
+    {
+      "from": "c.12",
+      "to": "p.10"
+    },
+    {
+      "from": "c.6",
+      "to": "arXiv.3"
+    },
+    {
+      "from": "arXiv.3",
+      "to": "c.8"
+    },
+    {
+      "from": "c.8",
+      "to": "p.4"
+    },
+    {
+      "from": "p.4",
+      "to": "p.8"
+    },
+    {
+      "from": "c.1",
+      "to": "c.2"
+    },
+    {
+      "from": "c.5",
+      "to": "p.5"
+    },
+    {
+      "from": "p.5",
+      "to": "c.15"
+    },
+    {
+      "from": "c.5",
+      "to": "c.16"
+    },
+    {
+      "from": "j.4",
+      "to": "c.7"
+    },
+    {
+      "from": "c.7",
+      "to": "c.13"
+    },
+    {
+      "from": "arXiv.1",
+      "to": "c.13"
+    },
+    {
+      "from": "j.4",
+      "to": "c.10"
+    },
+    {
+      "from": "p.3",
+      "to": "arXiv.1"
+    }
+  ],
+  "source": "Research relationships preserved from he-zhang.com; thematic development, not citation links."
+}
