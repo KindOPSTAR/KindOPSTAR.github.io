@@ -107,27 +107,14 @@ export default function Home() {
                 )}
               </div>
             </div>
-            <div className="hero-statement">
-              <span className="small-label">My research asks</span>
-              <h2>
-                When AI interprets
-                <br />
-                our lives,
-                <br />
-                <em>
-                  who stays
-                  <br />
-                  in control?
-                </em>
-              </h2>
-              <p>
-                I build and study AI systems that interpret sensitive human
-                data—and how they reshape trust, disclosure, control, and
-                agency.
-              </p>
-              <a className="text-link" href="#research-map">
-                Explore my research <span aria-hidden="true">↓</span>
-              </a>
+            <div className="hero-portrait">
+              <img
+                src="/he-zhang-portrait.jpeg"
+                alt="He Albert Zhang"
+                width={256}
+                height={256}
+                fetchPriority="high"
+              />
             </div>
           </div>
           <div className="metrics">

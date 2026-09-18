@@ -2150,3 +2150,31 @@ body {
   font-size: 12px;
   margin-top: 10px;
 }
+
+/* A restrained portrait balances the academic introduction. */
+.hero-grid {
+  grid-template-columns: minmax(0, 1fr) 256px;
+  align-items: center;
+}
+.hero-portrait {
+  justify-self: end;
+}
+.hero-portrait img {
+  display: block;
+  width: 256px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+@media (max-width: 700px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero-portrait {
+    justify-self: start;
+  }
+  .hero-portrait img {
+    width: 200px;
+  }
+}
