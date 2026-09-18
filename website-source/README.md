@@ -4,7 +4,7 @@ A responsive academic portfolio based on the existing he-zhang.com website and t
 
 ## Research atlas
 
-The interactive atlas supports theme filters, title/author/venue search, zoom, a readable list alternative, persistent work details, and directional ancestor/descendant highlighting. Connections describe thematic research trajectories, not bibliographic citations. The new VBC-Bench project has no invented edges. Each map node joins to a work using its stable ID.
+The interactive atlas supports separate dependency-path and chronological layouts, theme filters, title/author/venue search, zoom, focus on a selected branch, a readable list alternative (the mobile default), persistent work details, and directional ancestor/descendant highlighting. A side sheet opens full details with keyboard focus management. Direct predecessor/successor links are distinguished from the transitive lineage. Connections describe thematic research trajectories, not bibliographic citations. The new VBC-Bench project has no invented edges. Each map node joins to a work using its stable ID.
 
 - `data/profile.json`: publications, projects, biography paragraphs, themes, news, education, industry experience, mentoring, teaching, service, awards, and verified profile links.
 - `data/research-map.json`: short labels, contribution categories, tags, and directed relationships.
@@ -12,17 +12,17 @@ The interactive atlas supports theme filters, title/author/venue search, zoom, a
 - `app/page.tsx`: page structure and introductory text.
 - `app/globals.css`: responsive visual design.
 
-The source CV is not copied into the repository or offered as a public download. Its content was used as reference; publication titles already represented by full bibliographic records were generally preserved where the CV used abbreviated titles. Current CV updates include 1,170+ citations, h-index 14, availability in December 2026, the reasoning project, industry experience, awards, and verified social links.
+The source CV is not copied into the repository or offered as a public download. Its content was used as reference; publication titles already represented by full bibliographic records were generally preserved where the CV used abbreviated titles. Current CV updates include availability in December 2026, the reasoning project, industry experience, awards, and verified social links.
 
 ## Monthly Scholar synchronization
 
-Author: `MgxFi7QAAAAJ`. The workflow runs at 09:17 UTC on the first of each month; it can also be run manually. It uses the Google Scholar Author API from SerpApi, whose free plan listed 250 searches/month when checked on September 17, 2026. One refresh uses one API search. No paid plan is required at that allowance.
+Author: `MgxFi7QAAAAJ`. The workflow runs at 09:17 UTC on the first of each month and can also be run manually. It reads the public Google Scholar profile directly by default, without an API key or paid service. A verified snapshot on 2026-09-18 UTC contained 1,203 citations, h-index 15, and i10-index 19. `data/scholar.json` is the single source of truth for displayed metrics.
 
-Add a free-account key as the repository Actions secret `SERPAPI_API_KEY`. Never put it in source files or client-side code. Until configured, the website explicitly shows the dated September 2026 CV snapshot, not a claimed live count. The old August i10 value is not presented as current.
+The public-page parser checks the canonical author ID, the profile marker, named metric rows, numeric values, and consistency. It uses the All column, not the recent-citation column. It rejects challenge pages, incomplete results, and citation drops greater than 20%. A successful response is atomically persisted with its timestamp and source; failures preserve the last verified values and date. No proxy rotation, CAPTCHA bypass, or repeated retries are performed. Public access may be limited from GitHub runners; failures are reported in the workflow log.
 
-A successful update validates the author identity and all three metrics, writes the snapshot atomically, commits it, and builds the site. Network failures, quota errors, incomplete data, and unexpected drops greater than 20% retain the previous snapshot/date. A suspicious legitimate drop needs manual review. GitHub Actions logs show sync failures; the previous data remains on the page. A successful sync remains stored in the repository even if a later run fails. Branch protection must permit the Actions bot to commit the snapshot, or this persistence step must use a separately approved automation identity.
+If desired, an existing SerpApi account can be used by adding the optional repository Actions secret `SERPAPI_API_KEY`. This selects its Google Scholar Author API instead. Never place a credential in source or client code. No key is needed for the default public-profile method.
 
-Provider documentation: https://serpapi.com/google-scholar-author-api
+A successful monthly refresh commits the snapshot and rebuilds the site. Branch protection must permit the Actions bot to commit this file, otherwise an approved alternative workflow is required. The website displays the last successful verification date in UTC. Scholar itself can change between monthly checks.
 
 ## CV updates
 
