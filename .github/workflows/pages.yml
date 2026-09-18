@@ -35,13 +35,13 @@ jobs:
       - run: npm ci
       - run: node --experimental-strip-types --test tests/*.test.mjs
       - name: Refresh monthly Scholar metrics
-        if: github.event_name != 'pull_request' && env.SERPAPI_API_KEY != '' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
         id: scholar
         continue-on-error: true
         run: node scripts/sync-scholar.mjs
-      - name: Record missing Scholar configuration
-        if: github.event_name != 'pull_request' && env.SERPAPI_API_KEY == ''
-        run: echo '::notice::Scholar sync awaits SERPAPI_API_KEY. The dated CV snapshot is retained.'
+      - name: Report sync failure without replacing verified metrics
+        if: steps.scholar.outcome == 'failure'
+        run: echo '::warning::Scholar could not be refreshed. The last verified values and date are retained.'
       - name: Record a successful Scholar update
         if: steps.scholar.outcome == 'success'
         run: |
