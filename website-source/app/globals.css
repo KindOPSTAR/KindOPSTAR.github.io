@@ -135,22 +135,17 @@ main {
   padding: 65px 0 64px;
 }
 h1 {
-  font-size: clamp(65px, 7.8vw, 112px);
-  line-height: 0.98;
-  font-weight: 500;
-  letter-spacing: -6px;
+  font-size: clamp(2rem, 3.2vw, 2.625rem);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.035em;
 }
 h1 > span:first-child {
-  font-family: var(--font-serif);
-  font-size: 0.58em;
-  font-style: italic;
-  letter-spacing: -3px;
-}
-.name-period {
-  color: var(--accent);
+  font: inherit;
+  letter-spacing: inherit;
 }
 .role {
-  margin-top: 32px;
+  margin-top: 20px;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.8;
@@ -584,9 +579,6 @@ footer a:hover {
   .hero-statement {
     padding-left: 28px;
   }
-  h1 {
-    letter-spacing: -4px;
-  }
   .metrics {
     gap: 30px;
   }
@@ -652,13 +644,6 @@ footer a:hover {
     padding-top: 40px;
     padding-bottom: 35px;
     gap: 40px;
-  }
-  h1 {
-    font-size: 76px;
-    letter-spacing: -4px;
-  }
-  h1 > span:first-child {
-    letter-spacing: -2px;
   }
   .role {
     margin-top: 24px;
@@ -1339,11 +1324,10 @@ body {
   padding-bottom: 48px;
   gap: 7%;
 }
-h1 {
-  font-size: clamp(64px, 7.3vw, 104px);
-}
 .hero-statement h2 {
-  font-size: clamp(32px, 3.4vw, 46px);
+  font-size: clamp(1.75rem, 2.6vw, 2.125rem);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
 }
 .hero-statement {
   padding-left: 38px;
@@ -2017,14 +2001,11 @@ h1 {
     padding-top: 35px;
     gap: 28px;
   }
-  h1 {
-    font-size: 74px;
-  }
   .hero-statement {
     padding: 26px 0 0;
   }
   .hero-statement h2 {
-    font-size: 36px;
+    font-size: 1.75rem;
   }
   .hero-statement p {
     font-size: 16px;
