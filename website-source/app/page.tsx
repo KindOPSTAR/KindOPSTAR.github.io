@@ -284,21 +284,6 @@ export default function Home() {
             ))}
           </details>
         </section>
-        <section className="section current-projects">
-          <div className="section-label">
-            <span>In progress</span>
-            <h2>
-              Reasoning that
-              <br />
-              holds together.
-            </h2>
-          </div>
-          <div>
-            {profile.projects.map((p) => (
-              <Paper key={p.id} paper={p} />
-            ))}
-          </div>
-        </section>
         <section className="section news-section" id="news">
           <div className="section-label">
             <span>04 / News</span>

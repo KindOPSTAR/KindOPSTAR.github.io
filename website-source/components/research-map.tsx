@@ -69,12 +69,6 @@ const themes = [
     tags: ['trust', 'edu'],
     color: '#a5c8f4',
   },
-  {
-    key: 'reasoning',
-    label: 'LLM reasoning',
-    tags: ['reasoning', 'llmeval'],
-    color: '#b1a0ff',
-  },
 ];
 const works = [...profile.publications, ...profile.projects];
 const byId = Object.fromEntries(works.map((p) => [p.id, p]));
@@ -96,9 +90,7 @@ const clean = (s: string) => s.replace('✦', '');
 const year = (key: string) =>
   Number(byId[byKey[key].publicationId].kind.match(/20\d{2}/)?.[0]);
 const status = (key: string) =>
-  key === 'project-vbc'
-    ? 'Under review'
-    : key.startsWith('arXiv')
+  key.startsWith('arXiv')
       ? 'Preprint'
       : key.startsWith('pat')
         ? 'Patent'
@@ -572,7 +564,7 @@ export default function ResearchMap() {
                       <button
                         id={`atlas-node-${n.key.replaceAll('.', '-')}`}
                         key={n.key}
-                        className={`map-node ${effectiveSelected === n.key ? 'is-selected' : ''} ${chain.has(n.key) ? 'is-related' : 'is-muted'} ${['Preprint', 'Patent', 'Under review'].includes(status(n.key)) ? 'is-provisional' : ''}`}
+                        className={`map-node ${effectiveSelected === n.key ? 'is-selected' : ''} ${chain.has(n.key) ? 'is-related' : 'is-muted'} ${['Preprint', 'Patent'].includes(status(n.key)) ? 'is-provisional' : ''}`}
                         style={
                           {
                             left: pos.x,
@@ -609,7 +601,7 @@ export default function ResearchMap() {
               <i className="legend-line traced" /> Selected connections
             </span>
             <span>✦ Selected work</span>
-            <span>Dashed: preprint, patent, or under review</span>
+            <span>Dashed: preprint or patent</span>
           </div>
           {paper && (
             <div className="mobile-selection">

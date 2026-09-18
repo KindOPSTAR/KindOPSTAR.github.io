@@ -775,23 +775,7 @@
     "linkedin": "https://www.linkedin.com/in/he-albert-zhang/",
     "github": "https://github.com/KindOPSTAR"
   },
-  "projects": [
-    {
-      "id": "project-vbc",
-      "title": "Variable-Binding Violations in LLM Reasoning",
-      "kind": "Research project · Under review · 2026",
-      "authors": "He “Albert” Zhang — Initiator and Lead",
-      "venue": "VBC-Bench · Manuscript under review",
-      "note": "A benchmark and validated judge for cross-step consistency errors in LLM reasoning. Evaluates how injected variable-binding violations change correct solutions, and explores verifier guards and detect-and-correct distillation.",
-      "url": "",
-      "tags": [
-        "reasoning",
-        "LLM evaluation",
-        "AI safety"
-      ],
-      "selected": false
-    }
-  ],
+  "projects": [],
   "experience": [
     {
       "when": "Jun–Dec 2025",

@@ -1,10 +1,10 @@
 # He Albert Zhang — Academic website
 
-A responsive academic portfolio based on the existing he-zhang.com website and the September 2026 CV. The current version includes 40 existing works, one clearly marked under-review research project, and 37 research-development relationships retained from the original site.
+A responsive academic portfolio based on the existing he-zhang.com website and the September 2026 CV. The current version includes 40 existing works and 37 research-development relationships retained from the original site.
 
 ## Research atlas
 
-The interactive atlas supports separate dependency-path and chronological layouts, theme filters, title/author/venue search, zoom, focus on a selected branch, a readable list alternative (the mobile default), persistent work details, and directional ancestor/descendant highlighting. A side sheet opens full details with keyboard focus management. Direct predecessor/successor links are distinguished from the transitive lineage. Connections describe thematic research trajectories, not bibliographic citations. The new VBC-Bench project has no invented edges. Each map node joins to a work using its stable ID.
+The interactive atlas supports separate dependency-path and chronological layouts, theme filters, title/author/venue search, zoom, focus on a selected branch, a readable list alternative (the mobile default), persistent work details, and directional ancestor/descendant highlighting. A side sheet opens full details with keyboard focus management. Direct predecessor/successor links are distinguished from the transitive lineage. Connections describe thematic research trajectories, not bibliographic citations. Each map node joins to a work using its stable ID.
 
 - `data/profile.json`: publications, projects, biography paragraphs, themes, news, education, industry experience, mentoring, teaching, service, awards, and verified profile links.
 - `data/research-map.json`: short labels, contribution categories, tags, and directed relationships.

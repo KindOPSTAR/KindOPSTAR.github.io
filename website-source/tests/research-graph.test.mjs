@@ -38,10 +38,7 @@ test('cycles terminate and do not include selected node in its own lineage', () 
   assert.deepEqual([...r.ancestors], ['b']);
   assert.deepEqual([...r.descendants], ['b']);
 });
-test('the new under-review project has no invented causal edges', () => {
-  const r = traceLineage('project-vbc', graph.edges);
-  assert.equal(r.ancestors.size + r.descendants.size, 0);
-});
+
 
 const { layoutResearch, CARD_WIDTH, CARD_HEIGHT } =
   await import('../lib/research-graph.ts');
