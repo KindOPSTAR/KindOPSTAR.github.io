@@ -522,20 +522,6 @@
       "y": 612.0,
       "color": "#B4711A",
       "publicationId": "pub-p8"
-    },
-    {
-      "key": "project-vbc",
-      "tags": [
-        "reasoning",
-        "llmeval",
-        "safety"
-      ],
-      "arc": "sys",
-      "label": "VBC-Bench",
-      "x": 1200,
-      "y": 250,
-      "color": "#8A79E8",
-      "publicationId": "project-vbc"
     }
   ],
   "edges": [
