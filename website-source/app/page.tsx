@@ -88,9 +88,7 @@ export default function Home() {
           <div className="hero-grid">
             <div>
               <h1 id="name">
-                He <span>“Albert”</span>
-                <br />
-                Zhang<span className="name-period">.</span>
+                He <span>“Albert”</span> Zhang
               </h1>
               <p className="role">
                 Ph.D. candidate in Informatics
