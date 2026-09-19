@@ -1,0 +1,321 @@
+{
+  "checkedAt": "2026-09-18",
+  "scholarProfile": "https://scholar.google.com/citations?user=MgxFi7QAAAAJ&hl=en",
+  "scholarRecords": 42,
+  "siteWorks": 40,
+  "illustratedWorks": 30,
+  "limitations": "Scholar profile list readable; individual Scholar detail pages returned 429. Research continued through public primary sources. No new works added; unpublished-work exclusion preserved.",
+  "records": [
+    {
+      "scholarTitle": "Harnessing the power of AI in qualitative research: Exploring, using and redesigning ChatGPT",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:tS2w5q8j5-wC",
+      "publicationId": "pub-j5",
+      "sourceUrl": "https://arxiv.org/pdf/2309.10771#page=1",
+      "result": "Image added: Figure 1 · Qualitative-analysis prompt framework (earlier manuscript)"
+    },
+    {
+      "scholarTitle": "AI Governance in Higher Education: Case Studies of Guidance at Big Ten Universities",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:4OULZ7Gr8RgC",
+      "publicationId": "pub-j4",
+      "sourceUrl": "https://arxiv.org/pdf/2409.02017#page=10",
+      "result": "Image added: Figure 4 · University AI governance framework"
+    },
+    {
+      "scholarTitle": "Redefining qualitative analysis in the AI era: Utilizing ChatGPT for efficient thematic analysis. arXiv",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:NJ774b8OgUMC",
+      "publicationId": "pub-j5",
+      "sourceUrl": "https://arxiv.org/abs/2309.10771",
+      "result": "Earlier manuscript of pub-j5, verified by its related DOI. Figure is credited as an earlier manuscript; no duplicate publication added."
+    },
+    {
+      "scholarTitle": "QualiGPT: GPT as an easy-to-use tool for qualitative coding",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:GnPB-g6toBAC",
+      "publicationId": "pub-arx2",
+      "sourceUrl": "https://github.com/KindOPSTAR/QualiGPT",
+      "result": "Image added: QualiGPT · Toolkit and coding workflow"
+    },
+    {
+      "scholarTitle": "A Preliminary Exploration of YouTubers' Use of Generative-AI in Content Creation",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:70eg2SAEIzsC",
+      "publicationId": "pub-p3",
+      "sourceUrl": "https://arxiv.org/pdf/2403.06039#page=3",
+      "result": "Image added: Figure 2 · Generative AI content-creation examples"
+    },
+    {
+      "scholarTitle": "Beyond Visual Perception: Insights from Smartphone Interaction of Visually Impaired Users with Large Multimodal Models",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:abG-DnoFyZgC",
+      "publicationId": "pub-c8",
+      "sourceUrl": "https://arxiv.org/pdf/2502.16098#page=10",
+      "result": "Image added: Figure 4 · Human–AI interaction and handoffs"
+    },
+    {
+      "scholarTitle": "Enhancing the Travel Experience for People with Visual Impairments through Multimodal Interaction: NaviGPT, A Real-Time AI-Driven Mobile Navigation System",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:cFHS6HbyZ2cC",
+      "publicationId": "pub-p4",
+      "sourceUrl": "https://arxiv.org/pdf/2410.04005#page=1",
+      "result": "Image added: Figure 1 · NaviGPT navigation workflow"
+    },
+    {
+      "scholarTitle": "When qualitative research meets large language model: Exploring the potential of QualiGPT as a tool for qualitative coding",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:VL0QpB8kHFEC",
+      "publicationId": "pub-arx4",
+      "sourceUrl": "https://github.com/KindOPSTAR/QualiGPT",
+      "result": "Image added: QualiGPT · Toolkit and coding workflow"
+    },
+    {
+      "scholarTitle": "Emerging practices for large multimodal model (lmm) assistance for people with visual impairments: Implications for design",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:zA6iFVUQeVQC",
+      "publicationId": "pub-arx3",
+      "sourceUrl": "https://arxiv.org/pdf/2407.08882",
+      "result": "Full PDF inspected; text/tables without a suitable research figure."
+    },
+    {
+      "scholarTitle": "Exploring inductive and deductive qualitative coding with AI: investigating inter-rater reliability between large language model and human coders",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:LjlpjdlvIbIC",
+      "publicationId": "pub-c11",
+      "sourceUrl": "https://openaccess-api.cms-conferences.org/articles/download/978-1-964867-71-7_14",
+      "result": "Full PDF inspected: results are tables; no suitable research figure (publisher logo excluded)."
+    },
+    {
+      "scholarTitle": "Decoding fear: Exploring user experiences in virtual reality horror games",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:O3NaXMp0MMsC",
+      "publicationId": "pub-p2",
+      "sourceUrl": "https://arxiv.org/pdf/2312.15582#page=4",
+      "result": "Image added: Figure 2 · VR game-experience evaluation"
+    },
+    {
+      "scholarTitle": "Bubblecam: Engaging privacy in remote sighted assistance",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:pqnbT2bcN3wC",
+      "publicationId": "pub-c6",
+      "sourceUrl": "https://a11y.ist.psu.edu/downloads/bublecam.pdf#page=1",
+      "result": "Image added: Figure 1 · Privacy-preserving remote assistance"
+    },
+    {
+      "scholarTitle": "The Future of Learning: Large Language Models through the Lens of Students",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:u_35RYKgDlwC",
+      "publicationId": "pub-c7",
+      "sourceUrl": "https://arxiv.org/pdf/2407.12723",
+      "result": "Full PDF inspected; no suitable research figure."
+    },
+    {
+      "scholarTitle": "AI Trust Reshaping Administrative Burdens: Understanding Trust-Burden Dynamics in LLM-Assisted Benefits Systems",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:dshw04ExmUIC",
+      "publicationId": "pub-c10",
+      "sourceUrl": "https://arxiv.org/pdf/2505.22418#page=4",
+      "result": "Image added: Figure 1 · SNAP-LLM interface and configuration"
+    },
+    {
+      "scholarTitle": "VRMN-bD: A Multi-modal Natural Behavior Dataset of Immersive Human Fear Responses in VR Stand-up Interactive Games",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:g5m5HwL7SMYC",
+      "publicationId": "pub-c4",
+      "sourceUrl": "https://github.com/KindOPSTAR/VRMN-bD",
+      "result": "Image added: VRMN-bD · Multiview motion-capture demonstration"
+    },
+    {
+      "scholarTitle": "Harnessing the Power of AI in Qualitative Research: Role Assignment, Engagement, and User Perceptions of AI-Generated Follow-Up Questions in Semi-Structured Interviews",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:sSrBHYA8nusC",
+      "publicationId": null,
+      "sourceUrl": "https://arxiv.org/abs/2509.12709",
+      "result": "Separate interview study absent from current site. Public manuscript found; full download incomplete. Not added pending publication-status confirmation."
+    },
+    {
+      "scholarTitle": "A review of the frontier research on future smart home",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:JV2RwH3_ST0C",
+      "publicationId": "pub-j2",
+      "sourceUrl": "https://www.kjdb.org/CN/10.3981/j.issn.1000-7857.2023.08.004",
+      "result": "Publisher record found; PDF/figure access unavailable in this session."
+    },
+    {
+      "scholarTitle": "Understanding parents’ perspectives on responsible ai for children’s self-directed learning",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:JoZmwDi-zQgC",
+      "publicationId": "pub-c13",
+      "sourceUrl": "https://arxiv.org/abs/2510.24070",
+      "result": "Existing site links to a manuscript titled Building AI Literacy at Home. Title/version mapping needs confirmation before importing its figure."
+    },
+    {
+      "scholarTitle": "Multi-channel Sensor Network Construction, Data Fusion and Challenges for Smart Home",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:M05iB0D1s5AC",
+      "publicationId": "pub-p1",
+      "sourceUrl": "https://arxiv.org/pdf/2312.16697#page=5",
+      "result": "Image added: Figure 1 · Smart-home data fusion model"
+    },
+    {
+      "scholarTitle": "Understanding fear responses and coping mechanisms in vr horror gaming: Insights from semistructured interviews",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:SeFeTyx0c_EC",
+      "publicationId": "pub-j3",
+      "sourceUrl": "https://snaild.github.io/#publication",
+      "result": "Image added: Project overview"
+    },
+    {
+      "scholarTitle": "Design Research and Application Practice of Integrated Experimental Platform for Smart Home",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:hMod-77fHWUC",
+      "publicationId": "pub-j1",
+      "sourceUrl": "https://thfl.tsinghua.edu.cn/info/1145/1206.htm",
+      "result": "Coauthor’s university bibliography confirms the paper; no accessible figure obtained."
+    },
+    {
+      "scholarTitle": "Tips, tidings, and tech: Governmental communication on facebook during the covid-19 pandemic",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:j3f4tGmQtD8C",
+      "publicationId": "pub-c1",
+      "sourceUrl": "https://doi.org/10.1145/3543434.3543642",
+      "result": "Publisher and author-uploaded record found; publisher PDF returned 403. No figure imported."
+    },
+    {
+      "scholarTitle": "Third-Party Developers and Tool Development For Community Management on Live Streaming Platform Twitch",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:J_g5lzvAfSwC",
+      "publicationId": "pub-c5",
+      "sourceUrl": "https://arxiv.org/pdf/2401.11317#page=4",
+      "result": "Image added: Figure 1 · TwitchDev community and developer roles"
+    },
+    {
+      "scholarTitle": "Augmenting Image Annotation: A Human-LMM Collaborative Framework for Efficient Object Selection and Label Generation",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:CHSYGLWDkRkC",
+      "publicationId": "pub-c9",
+      "sourceUrl": "https://snaild.github.io/#publication",
+      "result": "Image added: Project overview"
+    },
+    {
+      "scholarTitle": "Zero-shot emotion annotation in facial images using large multimodal models: benchmarking and prospects for multi-class, multi-frame approaches",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:D_sINldO8mEC",
+      "publicationId": "pub-c12",
+      "sourceUrl": "https://arxiv.org/pdf/2502.12454#page=4",
+      "result": "Image added: Figure 1 · Multimodal emotion annotation pipeline"
+    },
+    {
+      "scholarTitle": "Generative AI in Virtual Reality Communities: A Preliminary Analysis of the VRChat Discord Community",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:NhqRSupF_l8C",
+      "publicationId": "pub-p5",
+      "sourceUrl": "https://jc926.github.io/Jie_Cai/paper/chiea25-629.pdf#page=10",
+      "result": "Image added: Figure 1 · VRChat community on Discord"
+    },
+    {
+      "scholarTitle": "\"Learning Together\": AI-Mediated Support for Parental Involvement in Everyday Learning",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:eflP2zaiRacC",
+      "publicationId": "pub-arx1",
+      "sourceUrl": "https://arxiv.org/pdf/2510.20123#page=7",
+      "result": "Image added: Figure 1 · FamLearn system architecture"
+    },
+    {
+      "scholarTitle": "Exploring Virtual Reality through Ihde's Instrumental Realism",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:RYcK_YlVTxYC",
+      "publicationId": "pub-c3",
+      "sourceUrl": "https://arxiv.org/pdf/2401.12521",
+      "result": "Full PDF inspected; no suitable research figure."
+    },
+    {
+      "scholarTitle": "VR Calm Plus: Coupling a Squeezable Tangible Interaction with Immersive VR for Stress Regulation",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:t6usbXjVLHcC",
+      "publicationId": "pub-c14",
+      "sourceUrl": "https://arxiv.org/pdf/2602.05093#page=1",
+      "result": "Image added: Figure 1 · Squeeze interaction and VR system"
+    },
+    {
+      "scholarTitle": "AI4Qual: A Comprehensive Field Guide to LLM-Supported Qualitative Research (Tutorial)",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:Y5dfb0dijaUC",
+      "publicationId": "pub-tut1",
+      "sourceUrl": "https://sites.google.com/view/ai4qual-iui2026/",
+      "result": "Tutorial and publisher records checked; no suitable paper-specific figure obtained. Publisher PDF returned 403."
+    },
+    {
+      "scholarTitle": "VR Calm+: Furry Stress Ball as a Haptic Modality for Relaxation in Virtual Reality",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:eJXPG6dFmWUC",
+      "publicationId": "pub-p6",
+      "sourceUrl": "https://snaild.github.io/#publication",
+      "result": "Image added: Project overview"
+    },
+    {
+      "scholarTitle": "Ethics and Social Responsibility in AI-Assisted Interviewing: An LLM-in-the-Loop Study of AI-Generated Follow-Up Questions",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:evX43VCCuoAC",
+      "publicationId": "pub-p9",
+      "sourceUrl": "https://arxiv.org/pdf/2606.30980#page=1",
+      "result": "Image added: Figure 1 · Human-supervised AI interviewing study"
+    },
+    {
+      "scholarTitle": "Comparative Analysis of Human vs. AI-powered Support in VRChat Communities on Discord: User Engagement, Response Dynamics and Interaction Patterns",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:9vf0nzSNQJEC",
+      "publicationId": "pub-c15",
+      "sourceUrl": "https://arxiv.org/pdf/2604.21963#page=19",
+      "result": "Image added: Figure 20 · Human and AI support workflows"
+    },
+    {
+      "scholarTitle": "Twitch Third-Party Developers' Support Seeking and Provision Practices on Discord",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:PELIpwtuRlgC",
+      "publicationId": "pub-c16",
+      "sourceUrl": "https://arxiv.org/pdf/2604.07732#page=4",
+      "result": "Image added: Figure 1 · Twitch developer support community"
+    },
+    {
+      "scholarTitle": "AIoT Smart Home Automation Architecture: Autonomous Decision-Making Powered by Multimodal Large Language Models (MLLMs)",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:eMMeJKvmdy0C",
+      "publicationId": "pub-p7",
+      "sourceUrl": "https://snaild.github.io/#publication",
+      "result": "Image added: Project overview"
+    },
+    {
+      "scholarTitle": "Monetizing Generative AI: YouTubers' Collective Knowledge on Earning from Generative AI Content",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:tkaPQYYpVKoC",
+      "publicationId": null,
+      "sourceUrl": "https://arxiv.org/abs/2603.07036",
+      "result": "Public PDF found and title verified. Not in current site; not added pending publication-status confirmation."
+    },
+    {
+      "scholarTitle": "FOR-Prompting: From Objection to Revision via an Asymmetric Prompting Protocol",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:fQNAKQ3IYiAC",
+      "publicationId": null,
+      "sourceUrl": "https://arxiv.org/abs/2510.01674",
+      "result": "PDF explicitly says Under review. Excluded according to the user’s instruction."
+    },
+    {
+      "scholarTitle": "Reconnecting An International Travel Network: The Personal Infrastructuring Work of International Travelers in A Multi-facet Crisis",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:blknAaTinKkC",
+      "publicationId": "pub-c2",
+      "sourceUrl": "https://arxiv.org/pdf/2308.14014#page=9",
+      "result": "Image added: Figure 1 · Platforms used to reconnect travel networks"
+    },
+    {
+      "scholarTitle": "PromptShield Home: Ambient Multimodal Prompt Injection Defense for Smart-Home Agents",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:2KloaMYe4IUC",
+      "publicationId": "pub-p10",
+      "sourceUrl": "https://arxiv.org/pdf/2608.05495#page=3",
+      "result": "Image added: Figure 3 · Ambient smart-home scenarios"
+    },
+    {
+      "scholarTitle": "When the Interviewer Is a Bot: Behavior, Breakdowns, and Trust in MLLM-Led Interviews",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:35r97b3x0nAC",
+      "publicationId": "pub-c17",
+      "sourceUrl": "https://arxiv.org/pdf/2608.10412#page=1",
+      "result": "Image added: Figure 1 · InterviewBot study workflow"
+    },
+    {
+      "scholarTitle": "Wolfborn: Silent Emotional Catharsis and Empathy via Pseudo-Vocalized Embodiment",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:SdhP9T11ey4C",
+      "publicationId": "pub-demo1",
+      "sourceUrl": "https://snaild.github.io/#publication",
+      "result": "Image added: Project overview"
+    },
+    {
+      "scholarTitle": "A Human-Centred AI System for Multi-Actor Planning and Collaboration in Family Learning",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=MgxFi7QAAAAJ&pagesize=100&citation_for_view=MgxFi7QAAAAJ:_B80troHkn4C",
+      "publicationId": null,
+      "sourceUrl": "https://arxiv.org/abs/2601.20737",
+      "result": "Public PDF found under ParPal title. Not in current site; not added pending publication-status and overlap confirmation."
+    }
+  ],
+  "siteOnly": [
+    {
+      "publicationId": "pub-pat1",
+      "title": "A Human-Machine Interaction System for Smart Home Environments, and Its Application Method",
+      "sourceUrl": "https://patents.google.com/patent/CN115291718A/en"
+    },
+    {
+      "publicationId": "pub-pat2",
+      "title": "Smart Home Comprehensive Experiment System and Data Processing Method",
+      "sourceUrl": "https://patents.google.com/patent/CN115268287A/en"
+    },
+    {
+      "publicationId": "pub-p8",
+      "title": "Communicating AI Uncertainty in Assistive Navigation for People with Visual Impairments",
+      "sourceUrl": "https://doi.org/10.1177/10711813261484587"
+    }
+  ]
+}

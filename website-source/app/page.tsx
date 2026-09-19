@@ -1,6 +1,7 @@
 import profile from '@/data/profile.json';
 import scholar from '@/data/scholar.json';
 import ResearchMap from '@/components/research-map';
+import PublicationFigure from '@/components/publication-figure';
 
 const metricsDate = new Date(
   scholar.asOf + (scholar.asOf.length === 7 ? '-01' : '') + 'T00:00:00Z',
@@ -24,7 +25,13 @@ const pubs = [...profile.publications].sort(
 function Paper({ paper }: { paper: (typeof pubs)[number] }) {
   return (
     <article className="paper" id={paper.id}>
-      <div className="paper-meta">{paper.kind.replace(/\[.*?\] · /, '')}</div>
+      <div className="paper-aside">
+        <div className="paper-meta">{paper.kind.replace(/\[.*?\] · /, '')}</div>
+        <PublicationFigure
+          publicationId={paper.id.replace(/^full-/, '')}
+          title={paper.title}
+        />
+      </div>
       <div>
         <h3>
           {paper.url ? (
