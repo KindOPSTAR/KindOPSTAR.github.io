@@ -116,10 +116,10 @@ export default function Home() {
             </div>
             <div className="hero-portrait">
               <img
-                src="/he-zhang-portrait.jpeg"
-                alt="He Albert Zhang"
-                width={256}
-                height={256}
+                src="/he-zhang-portrait-nyc.jpeg"
+                alt="He Albert Zhang at the NYC installation"
+                width={3296}
+                height={3296}
                 fetchPriority="high"
               />
             </div>
