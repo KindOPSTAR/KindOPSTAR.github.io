@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import map from '@/data/research-map.json';
 import profile from '@/data/profile.json';
+import PublicationFigure from '@/components/publication-figure';
 import {
   traceLineage,
   layoutResearch,
@@ -91,10 +92,10 @@ const year = (key: string) =>
   Number(byId[byKey[key].publicationId].kind.match(/20\d{2}/)?.[0]);
 const status = (key: string) =>
   key.startsWith('arXiv')
-      ? 'Preprint'
-      : key.startsWith('pat')
-        ? 'Patent'
-        : byId[byKey[key].publicationId].kind.split(' · ')[1];
+    ? 'Preprint'
+    : key.startsWith('pat')
+      ? 'Patent'
+      : byId[byKey[key].publicationId].kind.split(' · ')[1];
 
 export default function ResearchMap() {
   const [theme, setTheme] = useState('all');
@@ -229,6 +230,11 @@ export default function ResearchMap() {
         <h3>{clean(paper.title)}</h3>
         <p className="detail-authors">{paper.authors}</p>
         <p className="detail-venue">{paper.venue}</p>
+        <PublicationFigure
+          key={paper.id}
+          publicationId={paper.id}
+          title={paper.title}
+        />
         <p className="detail-abstract">{paper.note}</p>
         <div className="detail-links">
           {paper.url && (
