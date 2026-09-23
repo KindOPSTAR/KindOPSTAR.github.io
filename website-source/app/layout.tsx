@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './minimal.css';
 const title = 'He “Albert” Zhang | Human-Centered AI & HCI';
 const description =
-  'He Albert Zhang is a Ph.D. candidate at Penn State studying human-centered AI, qualitative research, trust, accessibility, and multimodal systems. Explore his research, publications, and experience.';
+  'He Albert Zhang is a Ph.D. candidate at Penn State studying human-centered AI, qualitative research, trust, accessibility, and multimodal systems. Explore his research, publications, and academic background.';
 export const metadata: Metadata = {
   metadataBase: new URL('https://he-zhang.com'),
   title,
