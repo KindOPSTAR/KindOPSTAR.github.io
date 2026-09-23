@@ -71,7 +71,7 @@ export default function Home() {
       </a>
       <header className="nav">
         <a href="#" className="wordmark" aria-label="He Albert Zhang home">
-          HZ<span> / </span>Research
+          He Zhang<span> / </span>Research
         </a>
         <nav aria-label="Main navigation">
           {nav.map(([id, label]) => (
@@ -160,11 +160,11 @@ export default function Home() {
         <ResearchMap />
         <section className="section about" id="research">
           <div className="section-label">
-            <span>02 / About</span>
+            <span>02 / Research vision</span>
             <h2>
-              Building systems.
+              Human-centered AI.
               <br />
-              Understanding people.
+              Built around people.
             </h2>
           </div>
           <div className="about-body">
@@ -222,11 +222,11 @@ export default function Home() {
 
         <section className="topics section">
           <div className="section-label">
-            <span>Research themes</span>
+            <span>Research areas</span>
             <h2>
               Six connected
               <br />
-              lines of inquiry.
+              areas of inquiry.
             </h2>
           </div>
           <div className="topic-grid">
@@ -248,7 +248,7 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <span className="section-kicker">03 / Publications</span>
-              <h2>Selected work</h2>
+              <h2>Latest publications</h2>
             </div>
             <a className="text-link" href="#all-publications">
               All {pubs.length} works ↓
