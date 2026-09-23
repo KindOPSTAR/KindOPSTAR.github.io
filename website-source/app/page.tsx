@@ -15,7 +15,7 @@ const nav = [
   ['research-map', 'Research atlas'],
   ['publications', 'Publications'],
   ['research', 'About'],
-  ['experience', 'Experience'],
+  ['experience', 'Background'],
 ];
 const pubs = [...profile.publications].sort(
   (a, b) =>
@@ -362,27 +362,14 @@ export default function Home() {
         </section>
         <section className="section experience-section" id="experience">
           <div className="section-label">
-            <span>06 / Experience</span>
+            <span>06 / Background</span>
             <h2>
-              Across research
+              Education
               <br />
-              and practice.
+              and recognition.
             </h2>
           </div>
           <div>
-            <h3 className="subheading">Industry</h3>
-            <div className="experience-list">
-              {profile.experience.map((x) => (
-                <article key={x.what}>
-                  <span>{x.when}</span>
-                  <div>
-                    <h4>{x.what}</h4>
-                    <p className="experience-role">{x.role}</p>
-                    <p>{x.det}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
             <h3 className="subheading">Education</h3>
             <div className="experience-list">
               {profile.education.map((x) => (

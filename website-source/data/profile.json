@@ -597,7 +597,7 @@
     "When an AI system mediates the interpretation of personal experience, who retains control over what is inferred, retained, and disclosed?",
     "I answer that in three registers at once — I build the systems, I study what people do with them, and I follow what that does downstream. Every paper below sits in one of the three.",
     "My dissertation, Integrating Large Language Models into the Qualitative Research Process, takes that question where it bites hardest: qualitative research, where scholars routinely route confidential participant data through commercial models. I work closely with Prof. Syed M. Billah, Prof. ChanMin Kim, and Prof. Xinyi Fu. In 2025 the college named me the recipient of the IST Ph.D. Student Award for Research Excellence.",
-    "Before Penn State I spent a year as a full-time research assistant at The Future Laboratory, an interdisciplinary HCI lab at Tsinghua University, building the multimodal affect and smart-home testbeds that much of my systems work still draws on. I hold an M.Sc. in Computer and Mathematical Sciences with first-class honours from Auckland University of Technology (2021) and a B.Sc. with a double major in Computer Science and Data Science from Massey University (2019), both in New Zealand. On the industry side I have worked on applied LLM systems at Genentech and on large-scale behavioural modelling at Experian, Callaghan Innovation, and HKUST’s SyMLab.",
+    "Before Penn State I spent a year as a full-time research assistant at The Future Laboratory, an interdisciplinary HCI lab at Tsinghua University, building the multimodal affect and smart-home testbeds that much of my systems work still draws on. I hold an M.Sc. in Computer and Mathematical Sciences with first-class honours from Auckland University of Technology (2021) and a B.Sc. with a double major in Computer Science and Data Science from Massey University (2019), both in New Zealand.",
     "Human-Centered AI · Human–AI Interaction · Trustworthy and Responsible AI · LLM/LMM Evaluation and Human Oversight · Affective Computing · Multimodal and Agentic Systems · CSCW · Accessibility · Ubiquitous Computing"
   ],
   "news": [
@@ -634,10 +634,6 @@
       "text": "I was named runner-up for the IST Award for Excellence in Teaching Support."
     },
     {
-      "date": "Dec 2025",
-      "text": "I wrapped up an AI internship at Genentech, building and evaluating LLM systems with the Product and Data Science group."
-    },
-    {
       "date": "Oct 2025",
       "text": "I chaired a paper session at CSCW 2025 in Bergen, and presented two pieces of the affect work — VR Calm+ at ISMAR and our zero-shot facial emotion benchmark at MRAC."
     },
@@ -672,8 +668,8 @@
   ],
   "mentoring": {
     "paragraphs": [
-      "Since 2021 I have recruited and mentored 31 students — 18 undergraduate, 12 master’s, 1 research assistant — across 14 institutions in China, the United States, the United Kingdom, and Hong Kong, including four supervised through the Penn State IST Summer Intern program.",
-      "They joined as research interns on 12 projects I initiated and led, where I set the research questions, directed study and system design, supervised data collection and analysis, and mentored manuscript preparation. 21 mentees have co-authored peer-reviewed papers with me — several as second author, one as co-first author, and one I mentored all the way to first authorship. Five have stayed with me across multiple projects."
+      "Since 2021 I have recruited and mentored 31 students — 18 undergraduate, 12 master’s, and 1 research assistant — across 14 institutions in China, the United States, the United Kingdom, and Hong Kong.",
+      "They contributed to 12 projects I initiated and led. I set the research questions, directed study and system design, supervised data collection and analysis, and mentored manuscript preparation. 21 mentees have co-authored peer-reviewed papers with me — several as second author, one as co-first author, and one I mentored through first authorship. Five have stayed with me across multiple projects."
     ],
     "items": [
       {
@@ -776,26 +772,7 @@
     "github": "https://github.com/KindOPSTAR"
   },
   "projects": [],
-  "experience": [
-    {
-      "when": "Jun–Dec 2025",
-      "what": "Genentech",
-      "role": "Research Intern · AI, Product and Data Science",
-      "det": "Designed and evaluated applied LLM solutions, built ML data pipelines, and worked with research, engineering, and business teams."
-    },
-    {
-      "when": "Jun–Aug 2024",
-      "what": "Experian",
-      "role": "Data Scientist Intern · Innovation Lab",
-      "det": "Developed features for credit-scoring models and migrated an ML pipeline across computational environments."
-    },
-    {
-      "when": "Nov 2020–Jan 2021",
-      "what": "Harmoney & Callaghan Innovation",
-      "role": "Data Scientist Intern / Research Fellow",
-      "det": "Built behavioral risk-prediction workflows, NLP pipelines, and a BERT-based question-answering model."
-    }
-  ],
+  "experience": [],
   "education": [
     {
       "when": "2022–Present",
