@@ -154,8 +154,8 @@ export default function Home() {
           </div>
           <div className="about-body">
             <p className="lead">
-              I study what happens when AI systems become the interpreters of
-              intimate human data.
+              I design and study human-centered AI systems, with a focus on
+              qualitative research, accessibility, and everyday interactions.
             </p>
             <p>
               I am a Ph.D. candidate at Penn State, advised by Distinguished
@@ -163,13 +163,8 @@ export default function Home() {
               Socially Responsible Artificial Intelligence.
             </p>
             <p>
-              My dissertation,{' '}
-              <em>
-                Integrating Large Language Models into the Qualitative Research
-                Process
-              </em>
-              , examines how scholars work with models when confidential
-              participant data is involved.
+              My work explores how people use and make sense of AI, and how
+              these systems can support human agency, privacy, and trust.
             </p>
             <details className="bio">
               <summary>
@@ -178,7 +173,7 @@ export default function Home() {
               {profile.about
                 .filter(
                   (p) =>
-                    p.startsWith('My dissertation') ||
+                    p.startsWith('I work closely') ||
                     p.startsWith('Before Penn'),
                 )
                 .map((p) => (

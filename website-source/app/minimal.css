@@ -79,7 +79,7 @@ h3[tabindex='-1']:focus {
 }
 .nav,
 main {
-  width: min(900px, calc(100% - 48px));
+  width: min(1120px, calc(100% - 48px));
   margin: auto;
 }
 .nav {
@@ -738,9 +738,7 @@ h2 {
     grid-template-columns: minmax(0, 1fr) 280px;
     column-gap: 28px;
     align-items: start;
-    width: min(1220px, calc(100vw - 48px));
-    margin-left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
   }
   .unified-heading,
   .unified-status {
@@ -787,7 +785,7 @@ h2 {
   margin-bottom: 14px;
 }
 .about-body p {
-  max-width: 740px;
+  max-width: 760px;
 }
 .about-body p + p {
   margin-top: 10px;
