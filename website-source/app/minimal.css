@@ -731,6 +731,53 @@ h2 {
     display: none;
   }
 }
+/* Keep the paper reader beside the complete map on larger screens. */
+@media (min-width: 960px) {
+  .unified-research {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    column-gap: 28px;
+    align-items: start;
+    width: min(1220px, calc(100vw - 48px));
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .unified-heading,
+  .unified-status {
+    grid-column: 1 / -1;
+  }
+  .unified-canvas {
+    grid-column: 1;
+    grid-row: 3;
+    min-width: 0;
+  }
+  .unified-note {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .unified-reader {
+    grid-column: 2;
+    grid-row: 3 / 5;
+    position: sticky;
+    top: 80px;
+    margin-top: 8px;
+    min-width: 0;
+    max-height: calc(100dvh - 100px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    border: 1px solid var(--border);
+  }
+  .unified-reader-grid,
+  .unified-connections {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .unified-reader-empty {
+    padding: 20px 0;
+    line-height: 1.7;
+  }
+}
 /* One column of academic content; secondary material is folded by default. */
 .section {
   padding: 28px 0;
