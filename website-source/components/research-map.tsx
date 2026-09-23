@@ -1,6 +1,13 @@
 'use client';
 
-import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
+import {
+  Fragment,
+  useEffect,
+  useMemo,
+  useReducer,
+  useRef,
+  useState,
+} from 'react';
 import map from '@/data/research-map.json';
 import categoryData from '@/data/research-categories.json';
 import profile from '@/data/profile.json';
@@ -38,6 +45,7 @@ export default function ResearchMap() {
   const { area, paper: selected } = navigation.current;
   const [compact, setCompact] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [motionPaused, setMotionPaused] = useState(false);
   const canvas = useRef<HTMLDivElement>(null);
   const layout = useMemo(
     () => layoutUnifiedResearch(categories, area, compact),
@@ -118,6 +126,7 @@ export default function ResearchMap() {
       className="unified-research"
       id="research-map"
       aria-labelledby="research-map-heading"
+      data-motion={motionPaused || reducedMotion ? 'off' : 'on'}
     >
       <div className="unified-heading">
         <div>
@@ -128,6 +137,13 @@ export default function ResearchMap() {
           </p>
         </div>
         <div className="unified-actions">
+          <Button
+            variant="ghost"
+            aria-pressed={motionPaused}
+            onClick={() => setMotionPaused((paused) => !paused)}
+          >
+            {motionPaused ? '▶ Motion' : 'Ⅱ Motion'}
+          </Button>
           <Button
             variant="ghost"
             disabled={!navigation.past.length}
@@ -167,6 +183,34 @@ export default function ResearchMap() {
         style={{ height: layout.height }}
         aria-label="All research papers grouped by area"
       >
+        {categories.map((category) => {
+          const heading = layout.categories[category.id];
+          const bottom = Math.max(
+            ...category.keys.map((key) => {
+              const node = layout.positions[key];
+              return node.y + node.height;
+            }),
+          );
+          return (
+            <div
+              key={category.id}
+              className="research-aura"
+              data-area={category.id}
+              data-focused={area === category.id}
+              aria-hidden="true"
+              style={{
+                left: `${heading.x / 10}%`,
+                top: heading.y,
+                width: `${heading.width / 10}%`,
+                height: bottom - heading.y + 8,
+              }}
+            >
+              <i />
+              <i />
+              <i />
+            </div>
+          );
+        })}
         <svg
           className="unified-edges"
           viewBox={`0 0 1000 ${layout.height}`}
@@ -189,29 +233,47 @@ export default function ResearchMap() {
           {map.edges.map((edge) => {
             const id = `${edge.from}:${edge.to}`;
             const highlighted = lineage.edges.has(id);
+            const direction = lineage.ancestors.has(edge.from)
+              ? 'before'
+              : 'after';
             const withinArea =
               !!area &&
               categoryOf(edge.from).id === area &&
               categoryOf(edge.to).id === area;
             return (
-              <path
-                key={id}
-                className="unified-edge"
-                data-highlighted={highlighted}
-                data-muted={!!selected && !highlighted}
-                d={paths[id]}
-                stroke={highlighted ? '#ad3c48' : '#bdb8b8'}
-                strokeWidth={highlighted ? 2.4 : withinArea ? 1.4 : 0.9}
-                opacity={
-                  highlighted ? 1 : selected ? 0.08 : withinArea ? 0.48 : 0.2
-                }
-                fill="none"
-                vectorEffect="non-scaling-stroke"
-                markerEnd="url(#unified-arrow)"
-                style={{
-                  transitionDuration: reducedMotion ? '1ms' : undefined,
-                }}
-              />
+              <Fragment key={id}>
+                <path
+                  id={`research-edge-${id}`}
+                  className="unified-edge"
+                  data-highlighted={highlighted}
+                  data-direction={direction}
+                  data-area={categoryOf(edge.from).id}
+                  data-muted={!!selected && !highlighted}
+                  d={paths[id]}
+                  stroke={highlighted ? '#ad3c48' : '#bdb8b8'}
+                  strokeWidth={highlighted ? 2.4 : withinArea ? 1.4 : 0.9}
+                  opacity={
+                    highlighted ? 1 : selected ? 0.08 : withinArea ? 0.48 : 0.2
+                  }
+                  fill="none"
+                  vectorEffect="non-scaling-stroke"
+                  markerEnd="url(#unified-arrow)"
+                  style={{
+                    transitionDuration: reducedMotion ? '1ms' : undefined,
+                  }}
+                />
+                {highlighted && !reducedMotion && !motionPaused && (
+                  <circle
+                    className="research-flow"
+                    r="3"
+                    data-direction={direction}
+                  >
+                    <animateMotion dur="2.8s" repeatCount="indefinite">
+                      <mpath href={`#research-edge-${id}`} />
+                    </animateMotion>
+                  </circle>
+                )}
+              </Fragment>
             );
           })}
         </svg>
@@ -221,6 +283,7 @@ export default function ResearchMap() {
             <button
               key={category.id}
               className="unified-category"
+              data-area={category.id}
               data-focused={area === category.id}
               style={{
                 left: `${position.x / 10}%`,
@@ -256,6 +319,7 @@ export default function ResearchMap() {
             <button
               key={key}
               className="unified-node"
+              data-area={category.id}
               data-scale={position.scale}
               data-area-active={!area || area === category.id}
               data-lineage={lineageState}

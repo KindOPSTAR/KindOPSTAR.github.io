@@ -1,1 +1,10 @@
 @import 'tailwindcss';
+
+:root {
+  --research-violet: #7150c7;
+  --research-rose: #bf4778;
+  --research-teal: #087e83;
+  --research-blue: #346cc2;
+  --research-orange: #ad641b;
+  --research-indigo: #5358b8;
+}
