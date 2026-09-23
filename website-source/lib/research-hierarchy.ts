@@ -40,3 +40,34 @@ export function layoutBranch(keys: string[], edges: Edge[], columns = 3) {
   }
   return { positions, links, width, height: Math.max(96, row * 108 - 20) };
 }
+
+/** Route skipped generations through the outer gutter, never through another card. */
+export function branchEdgePoints(
+  layout: ReturnType<typeof layoutBranch>,
+  edge: Edge,
+) {
+  const a = layout.positions[edge.from],
+    b = layout.positions[edge.to];
+  const x1 = a.x + layout.width / 2,
+    x2 = b.x + layout.width / 2;
+  const y1 = a.y + 72,
+    y2 = b.y - 3;
+  if (y2 - y1 < 60) {
+    const middle = (y1 + y2) / 2;
+    return [
+      { x: x1, y: y1 },
+      { x: x1, y: middle },
+      { x: x2, y: middle },
+      { x: x2, y: y2 },
+    ];
+  }
+  const gutter = x1 + x2 < 1000 ? 3 : 997;
+  return [
+    { x: x1, y: y1 },
+    { x: x1, y: y1 + 16 },
+    { x: gutter, y: y1 + 16 },
+    { x: gutter, y: y2 - 16 },
+    { x: x2, y: y2 - 16 },
+    { x: x2, y: y2 },
+  ];
+}

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { layoutBranch } from '../lib/research-hierarchy.ts';
+import { layoutBranch, branchEdgePoints } from '../lib/research-hierarchy.ts';
 const read = (file) => JSON.parse(readFileSync(new URL(file, import.meta.url)));
 const graph = read('../data/research-map.json');
 const categories = read('../data/research-categories.json');
@@ -49,4 +49,33 @@ test('branch layout handles empty and single-node branches and rejects cycles', 
       ),
     /cycle/,
   );
+});
+
+test('connection paths stay outside every unrelated paper card', () => {
+  for (const c of categories)
+    for (const columns of [2, 3]) {
+      const l = layoutBranch(c.keys, graph.edges, columns);
+      for (const e of l.links) {
+        const points = branchEdgePoints(l, e);
+        for (let i = 1; i < points.length; i++) {
+          const a = points[i - 1],
+            b = points[i];
+          assert.ok(a.x === b.x || a.y === b.y);
+          for (const [key, p] of Object.entries(l.positions)) {
+            if (key === e.from || key === e.to) continue;
+            const crosses =
+              a.x === b.x
+                ? a.x > p.x &&
+                  a.x < p.x + l.width &&
+                  Math.max(a.y, b.y) > p.y &&
+                  Math.min(a.y, b.y) < p.y + 72
+                : a.y > p.y &&
+                  a.y < p.y + 72 &&
+                  Math.max(a.x, b.x) > p.x &&
+                  Math.min(a.x, b.x) < p.x + l.width;
+            assert.equal(crosses, false, `${e.from}->${e.to} crosses ${key}`);
+          }
+        }
+      }
+    }
 });
