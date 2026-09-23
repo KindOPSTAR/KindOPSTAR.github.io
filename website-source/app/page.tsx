@@ -12,7 +12,7 @@ const metricsDate = new Date(
   timeZone: 'UTC',
 });
 const nav = [
-  ['research-map', 'Research atlas'],
+  ['research-map', 'Research'],
   ['publications', 'Publications'],
   ['research', 'About'],
   ['experience', 'Background'],
@@ -53,12 +53,6 @@ function Paper({ paper }: { paper: (typeof pubs)[number] }) {
         {paper.venue.includes('Honorable Mention') && (
           <span className="paper-award">Best Paper Honorable Mention</span>
         )}
-        <p className="paper-note">{paper.note}</p>
-        <div className="tags">
-          {paper.tags.map((t) => (
-            <span key={t}>{t}</span>
-          ))}
-        </div>
       </div>
     </article>
   );
@@ -86,12 +80,6 @@ export default function Home() {
       </header>
       <main id="main">
         <section className="hero" aria-labelledby="name">
-          <div className="hero-top">
-            <span className="eyebrow">
-              Human–computer interaction · Penn State
-            </span>
-            <span className="location">University Park, PA</span>
-          </div>
           <div className="hero-grid">
             <div>
               <h1 id="name">
@@ -102,7 +90,9 @@ export default function Home() {
                 <br />
                 College of Information Sciences and Technology
               </p>
-              <p className="availability">Available December 2026</p>
+              <p className="availability">
+                Human-centered AI · Human–computer interaction
+              </p>
               <div className="hero-links">
                 <a href={'mailto:' + profile.links.email}>Email ↗</a>
                 <a href={profile.links.github}>GitHub ↗</a>
@@ -160,12 +150,7 @@ export default function Home() {
         <ResearchMap />
         <section className="section about" id="research">
           <div className="section-label">
-            <span>02 / Research vision</span>
-            <h2>
-              Human-centered AI.
-              <br />
-              Built around people.
-            </h2>
+            <h2>About</h2>
           </div>
           <div className="about-body">
             <p className="lead">
@@ -186,23 +171,6 @@ export default function Home() {
               , examines how scholars work with models when confidential
               participant data is involved.
             </p>
-            <div className="research-arcs">
-              <div>
-                <span>01</span>
-                <h3>Build</h3>
-                <p>Tools, datasets, testbeds, and defences.</p>
-              </div>
-              <div>
-                <span>02</span>
-                <h3>Understand</h3>
-                <p>Evidence of how people actually use AI.</p>
-              </div>
-              <div>
-                <span>03</span>
-                <h3>Question</h3>
-                <p>Consequences for trust, ethics, and institutions.</p>
-              </div>
-            </div>
             <details className="bio">
               <summary>
                 Background & collaborations <span>+</span>
@@ -220,35 +188,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="topics section">
-          <div className="section-label">
-            <span>Research areas</span>
-            <h2>
-              Six connected
-              <br />
-              areas of inquiry.
-            </h2>
-          </div>
-          <div className="topic-grid">
-            {profile.topics.map((t, i) => (
-              <details className="topic" key={t.title}>
-                <summary>
-                  <span className="topic-number">0{i + 1}</span>
-                  <h3>{t.title}</h3>
-                  <span className="topic-toggle" aria-hidden="true">
-                    ↗
-                  </span>
-                </summary>
-                <p>{t.description}</p>
-              </details>
-            ))}
-          </div>
-        </section>
         <section className="section publication-section" id="publications">
           <div className="section-heading">
             <div>
-              <span className="section-kicker">03 / Publications</span>
-              <h2>Latest publications</h2>
+              <h2>Selected publications</h2>
             </div>
             <a className="text-link" href="#all-publications">
               All {pubs.length} works ↓
@@ -278,25 +221,13 @@ export default function Home() {
             ))}
           </details>
         </section>
-        <section className="section news-section" id="news">
-          <div className="section-label">
-            <span>04 / News</span>
-            <h2>Recently.</h2>
-          </div>
-          <div className="news-list">
-            {profile.news.slice(0, 5).map((n, i) => (
-              <article key={i}>
-                <span className="news-date">{n.date}</span>
-                <p>
-                  {n.text.startsWith(n.date)
-                    ? n.text.slice(n.date.length).trim()
-                    : n.text}
-                </p>
-              </article>
-            ))}
-            <details className="news-archive">
-              <summary>Earlier updates +</summary>
-              {profile.news.slice(5).map((n, i) => (
+        <details className="secondary-section" id="news">
+          <summary>
+            News<span aria-hidden="true">+</span>
+          </summary>
+          <div className="secondary-content">
+            <div className="news-list">
+              {profile.news.slice(0, 5).map((n, i) => (
                 <article key={i}>
                   <span className="news-date">{n.date}</span>
                   <p>
@@ -306,48 +237,34 @@ export default function Home() {
                   </p>
                 </article>
               ))}
-            </details>
-          </div>
-        </section>
-        <section className="section" id="mentoring">
-          <div className="section-label">
-            <span>05 / People & community</span>
-            <h2>
-              Research grows
-              <br />
-              through people.
-            </h2>
-            <div className="mentoring-stat">
-              <strong>31</strong>
-              <span>
-                students mentored
-                <br />
-                across 14 institutions
-              </span>
+              <details className="news-archive">
+                <summary>Earlier updates +</summary>
+                {profile.news.slice(5).map((n, i) => (
+                  <article key={i}>
+                    <span className="news-date">{n.date}</span>
+                    <p>
+                      {n.text.startsWith(n.date)
+                        ? n.text.slice(n.date.length).trim()
+                        : n.text}
+                    </p>
+                  </article>
+                ))}
+              </details>
             </div>
           </div>
-          <div className="community">
-            <h3>Mentoring & teaching</h3>
-            {profile.mentoring.paragraphs.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
-            <div className="experience-list">
-              {profile.mentoring.items.map((x, i) => (
-                <article key={i}>
-                  <span>{x.when}</span>
-                  <div>
-                    <h4>{x.what}</h4>
-                    <p>{x.det}</p>
-                  </div>
-                </article>
+        </details>
+        <details className="secondary-section" id="mentoring">
+          <summary>
+            Teaching & community<span aria-hidden="true">+</span>
+          </summary>
+          <div className="secondary-content">
+            <div className="community">
+              <h3>Mentoring & teaching</h3>
+              {profile.mentoring.paragraphs.map((p) => (
+                <p key={p}>{p}</p>
               ))}
-            </div>
-            <details className="service">
-              <summary>
-                Academic service <span>+</span>
-              </summary>
               <div className="experience-list">
-                {profile.service.items.map((x, i) => (
+                {profile.mentoring.items.map((x, i) => (
                   <article key={i}>
                     <span>{x.when}</span>
                     <div>
@@ -357,37 +274,34 @@ export default function Home() {
                   </article>
                 ))}
               </div>
-            </details>
-          </div>
-        </section>
-        <section className="section experience-section" id="experience">
-          <div className="section-label">
-            <span>06 / Background</span>
-            <h2>
-              Education
-              <br />
-              and recognition.
-            </h2>
-          </div>
-          <div>
-            <h3 className="subheading">Education</h3>
-            <div className="experience-list">
-              {profile.education.map((x) => (
-                <article key={x.what}>
-                  <span>{x.when}</span>
-                  <div>
-                    <h4>{x.what}</h4>
-                    <p>{x.det}</p>
-                  </div>
-                </article>
-              ))}
+              <details className="service">
+                <summary>
+                  Academic service <span>+</span>
+                </summary>
+                <div className="experience-list">
+                  {profile.service.items.map((x, i) => (
+                    <article key={i}>
+                      <span>{x.when}</span>
+                      <div>
+                        <h4>{x.what}</h4>
+                        <p>{x.det}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </details>
             </div>
-            <details className="service">
-              <summary>
-                Awards & funding <span>+</span>
-              </summary>
+          </div>
+        </details>
+        <details className="secondary-section" id="experience">
+          <summary>
+            Background<span aria-hidden="true">+</span>
+          </summary>
+          <div className="secondary-content">
+            <div>
+              <h3 className="subheading">Education</h3>
               <div className="experience-list">
-                {profile.awards.map((x) => (
+                {profile.education.map((x) => (
                   <article key={x.what}>
                     <span>{x.when}</span>
                     <div>
@@ -397,25 +311,29 @@ export default function Home() {
                   </article>
                 ))}
               </div>
-            </details>
+              <details className="service">
+                <summary>
+                  Awards & funding <span>+</span>
+                </summary>
+                <div className="experience-list">
+                  {profile.awards.map((x) => (
+                    <article key={x.what}>
+                      <span>{x.when}</span>
+                      <div>
+                        <h4>{x.what}</h4>
+                        <p>{x.det}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </details>
+            </div>
           </div>
-        </section>
+        </details>
         <footer>
-          <div>
-            <span className="eyebrow">Let’s connect</span>
-            <h2>
-              Good questions
-              <br />
-              start conversations.
-            </h2>
-            <a href={'mailto:' + profile.links.email}>
-              {profile.links.email} ↗
-            </a>
-          </div>
-          <div className="footer-bottom">
-            <span>He “Albert” Zhang · Penn State</span>
-            <a href="#">Back to top ↑</a>
-          </div>
+          <span>He “Albert” Zhang · Penn State</span>
+          <a href={'mailto:' + profile.links.email}>{profile.links.email}</a>
+          <a href="#">Back to top ↑</a>
         </footer>
       </main>
     </>
