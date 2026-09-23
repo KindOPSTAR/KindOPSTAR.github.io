@@ -1,162 +1,133 @@
 'use client';
 
-import { useEffect, useReducer, useRef, useState } from 'react';
+import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import map from '@/data/research-map.json';
-import categories from '@/data/research-categories.json';
+import categoryData from '@/data/research-categories.json';
 import profile from '@/data/profile.json';
 import PublicationFigure from '@/components/publication-figure';
-import { layoutBranch, branchEdgePoints } from '@/lib/research-hierarchy';
+import {
+  edgePath,
+  layoutUnifiedResearch,
+  researchLineage,
+} from '@/lib/research-hierarchy';
 import {
   initialResearchNavigation,
   researchNavigation,
 } from '@/lib/research-navigation';
 import { Button } from '@/components/ui/button';
-import {
-  Sheet,
-  SheetContent,
-  SheetTitle,
-  SheetDescription,
-} from '@/components/ui/sheet';
 
 const papers = Object.fromEntries(profile.publications.map((p) => [p.id, p]));
-const nodes = Object.fromEntries(map.nodes.map((n) => [n.key, n]));
-const categoryOf = (key: string) =>
-  categories.find((c) => c.keys.includes(key))!;
+const nodes = Object.fromEntries(map.nodes.map((node) => [node.key, node]));
 const year = (key: string) =>
   papers[nodes[key].publicationId].kind.match(/20\d{2}/)?.[0] || '';
+const categories = categoryData.map((category) => ({
+  ...category,
+  keys: [...category.keys].sort(
+    (a, b) => Number(year(a)) - Number(year(b)) || nodes[a].y - nodes[b].y,
+  ),
+}));
+const categoryOf = (key: string) =>
+  categories.find((category) => category.keys.includes(key))!;
+const allKeys = categories.flatMap((category) => category.keys);
 
 export default function ResearchMap() {
   const [navigation, dispatch] = useReducer(
     researchNavigation,
     initialResearchNavigation,
   );
-  const { area, paper: selected, anchor } = navigation.current;
-  const [columns, setColumns] = useState(2);
-  const [sheetOpen, setSheetOpen] = useState(false);
-  const graphFrame = useRef<HTMLDivElement>(null);
-  const active = categories.find((c) => c.id === area);
-  const selectedArea = selected ? categoryOf(selected) : null;
-  const external = !!selected && selectedArea?.id !== area;
-  const keys = active
-    ? [...active.keys].sort((a, b) => Number(year(a)) - Number(year(b)))
-    : [];
-  const layout = layoutBranch(keys, map.edges, columns);
-  const paper = selected ? papers[nodes[selected].publicationId] : null;
-  const before = new Set(
-    map.edges.filter((e) => e.to === anchor).map((e) => e.from),
+  const { area, paper: selected } = navigation.current;
+  const [compact, setCompact] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const canvas = useRef<HTMLDivElement>(null);
+  const layout = useMemo(
+    () => layoutUnifiedResearch(categories, area, compact),
+    [area, compact],
   );
-  const after = new Set(
-    map.edges.filter((e) => e.from === anchor).map((e) => e.to),
+  const paths = Object.fromEntries(
+    map.edges.map((edge) => [
+      `${edge.from}:${edge.to}`,
+      edgePath(layout, edge),
+    ]),
   );
+  const lineage = useMemo(
+    () => researchLineage(selected, map.edges),
+    [selected],
+  );
+  const selectedPaper = selected ? papers[nodes[selected].publicationId] : null;
+  const selectedCategory = selected ? categoryOf(selected) : null;
+  const activeCategory = categories.find((category) => category.id === area);
+
   useEffect(() => {
-    if (!graphFrame.current) return;
+    if (!canvas.current) return;
     const observer = new ResizeObserver(([entry]) =>
-      setColumns(entry.contentRect.width < 680 ? 2 : 3),
+      setCompact(entry.contentRect.width < 620),
     );
-    observer.observe(graphFrame.current);
+    observer.observe(canvas.current);
     return () => observer.disconnect();
-  }, [area]);
+  }, []);
   useEffect(() => {
-    if (!area) setSheetOpen(false);
-  }, [area]);
-  function choose(key: string) {
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const update = () => setReducedMotion(media.matches);
+    update();
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
+  function choosePaper(key: string) {
     dispatch({ type: 'paper', paper: key, area: categoryOf(key).id });
   }
-  function relations(direction: 'before' | 'after') {
-    const edges = map.edges.filter((e) =>
-      direction === 'before' ? e.to === selected : e.from === selected,
+  function related(direction: 'before' | 'after') {
+    if (!selected) return null;
+    const relatedEdges = map.edges.filter((edge) =>
+      direction === 'before' ? edge.to === selected : edge.from === selected,
     );
     return (
-      <div className="reader-relations">
-        <h4>{direction === 'before' ? 'Builds on' : 'Leads to'}</h4>
-        {edges.length ? (
-          edges.map((e) => {
-            const key = direction === 'before' ? e.from : e.to;
-            const category = categoryOf(key);
+      <div className="unified-relations">
+        <h4>
+          {direction === 'before' ? 'Directly builds on' : 'Directly leads to'}
+        </h4>
+        {relatedEdges.length ? (
+          relatedEdges.map((edge) => {
+            const key = direction === 'before' ? edge.from : edge.to;
             return (
-              <Button variant="ghost" key={key} onClick={() => choose(key)}>
+              <Button
+                variant="ghost"
+                key={key}
+                onClick={() => choosePaper(key)}
+              >
                 <span>
                   {nodes[key].label}
-                  <small>
-                    {year(key)}
-                    {category.id !== area ? ` · ${category.title}` : ''}
-                  </small>
+                  <small>{categoryOf(key).title}</small>
                 </span>
-                <span aria-hidden="true">
-                  {category.id !== area ? '↗' : '→'}
-                </span>
+                <span>{year(key)} →</span>
               </Button>
             );
           })
         ) : (
           <p>
             {direction === 'before'
-              ? 'No earlier work linked.'
-              : 'No later work linked.'}
+              ? 'Starting point in this map.'
+              : 'No later work mapped yet.'}
           </p>
         )}
       </div>
     );
   }
-  const detail =
-    paper && selected ? (
-      <>
-        {external && (
-          <div className="reader-external">
-            <span>From {selectedArea?.title}</span>
-            <Button
-              variant="ghost"
-              onClick={() => {
-                dispatch({ type: 'locate', area: selectedArea!.id });
-                setSheetOpen(false);
-              }}
-            >
-              Show in its area →
-            </Button>
-          </div>
-        )}
-        <h3 className="reader-title">{paper.title.replace('✦', '')}</h3>
-        <p className="reader-venue">{paper.venue}</p>
-        <p className="reader-authors">{paper.authors}</p>
-        <p className="reader-note">{paper.note}</p>
-        <div className="reader-links">
-          {paper.url && <a href={paper.url}>Read paper ↗</a>}
-          {selected === 'c.4' && (
-            <a href="https://github.com/KindOPSTAR/VRMN-bD">Dataset & demo ↗</a>
-          )}
-          {selected === 'arXiv.2' && (
-            <a href="https://github.com/KindOPSTAR/QualiGPT">Code ↗</a>
-          )}
-        </div>
-        <div className="reader-connections">
-          {relations('before')}
-          {relations('after')}
-        </div>
-        <PublicationFigure
-          key={paper.id}
-          publicationId={paper.id}
-          title={paper.title}
-        />
-      </>
-    ) : (
-      <div className="reader-empty">
-        <span>Paper details</span>
-        <h3>Select a paper in the map</h3>
-        <p>
-          Its contribution and connected works appear here. The map stays in
-          place.
-        </p>
-      </div>
-    );
+
   return (
     <section
-      className="research-tree"
+      className="unified-research"
       id="research-map"
       aria-labelledby="research-map-heading"
     >
-      <div className="tree-heading">
-        <h2 id="research-map-heading">Research</h2>
-        <div className="tree-navigation">
+      <div className="unified-heading">
+        <div>
+          <h2 id="research-map-heading">Research map</h2>
+          <p>
+            All works remain visible. Select an area or paper to reshape the
+            map.
+          </p>
+        </div>
+        <div className="unified-actions">
           <Button
             variant="ghost"
             disabled={!navigation.past.length}
@@ -164,193 +135,216 @@ export default function ResearchMap() {
           >
             ← Previous
           </Button>
-          {active && (
-            <Button
-              variant="ghost"
-              onClick={() => dispatch({ type: 'overview' })}
-            >
-              All areas
-            </Button>
-          )}
+          <Button
+            variant="ghost"
+            aria-pressed={!area}
+            onClick={() => dispatch({ type: 'area', area: null })}
+          >
+            Show all
+          </Button>
         </div>
       </div>
-      <p className="tree-context" aria-live="polite" aria-atomic="true">
-        {active ? (
+      <div className="unified-status" aria-live="polite" aria-atomic="true">
+        <span>
+          {activeCategory ? activeCategory.title : 'All research areas'}
+          {selected ? ` / ${nodes[selected].label}` : ''}
+        </span>
+        <div className="unified-legend" aria-label="Map legend">
+          <span>
+            <i className="legend-swatch selected" /> selected
+          </span>
+          <span>
+            <i className="legend-swatch before" /> earlier
+          </span>
+          <span>
+            <i className="legend-swatch after" /> later
+          </span>
+        </div>
+      </div>
+      <div
+        ref={canvas}
+        className="unified-canvas"
+        style={{ height: layout.height }}
+        aria-label="All research papers grouped by area"
+      >
+        <svg
+          className="unified-edges"
+          viewBox={`0 0 1000 ${layout.height}`}
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <marker
+              id="unified-arrow"
+              viewBox="0 0 8 8"
+              refX="7"
+              refY="4"
+              markerWidth="5"
+              markerHeight="5"
+              orient="auto"
+            >
+              <path d="M0 0L8 4L0 8Z" fill="context-stroke" />
+            </marker>
+          </defs>
+          {map.edges.map((edge) => {
+            const id = `${edge.from}:${edge.to}`;
+            const highlighted = lineage.edges.has(id);
+            const withinArea =
+              !!area &&
+              categoryOf(edge.from).id === area &&
+              categoryOf(edge.to).id === area;
+            return (
+              <path
+                key={id}
+                className="unified-edge"
+                data-highlighted={highlighted}
+                data-muted={!!selected && !highlighted}
+                d={paths[id]}
+                stroke={highlighted ? '#ad3c48' : '#bdb8b8'}
+                strokeWidth={highlighted ? 2.4 : withinArea ? 1.4 : 0.9}
+                opacity={
+                  highlighted ? 1 : selected ? 0.08 : withinArea ? 0.48 : 0.2
+                }
+                fill="none"
+                vectorEffect="non-scaling-stroke"
+                markerEnd="url(#unified-arrow)"
+                style={{
+                  transitionDuration: reducedMotion ? '1ms' : undefined,
+                }}
+              />
+            );
+          })}
+        </svg>
+        {categories.map((category) => {
+          const position = layout.categories[category.id];
+          return (
+            <button
+              key={category.id}
+              className="unified-category"
+              data-focused={area === category.id}
+              style={{
+                left: `${position.x / 10}%`,
+                top: position.y,
+                width: `${position.width / 10}%`,
+              }}
+              onClick={() =>
+                dispatch({
+                  type: 'area',
+                  area: area === category.id ? null : category.id,
+                })
+              }
+              aria-pressed={area === category.id}
+            >
+              <strong>{category.title}</strong>
+              <span>{category.keys.length} works</span>
+            </button>
+          );
+        })}
+        {allKeys.map((key) => {
+          const position = layout.positions[key];
+          const category = categoryOf(key);
+          const lineageState =
+            key === selected
+              ? 'selected'
+              : lineage.ancestors.has(key)
+                ? 'before'
+                : lineage.descendants.has(key)
+                  ? 'after'
+                  : 'none';
+          const muted = !!selected && lineageState === 'none';
+          return (
+            <button
+              key={key}
+              className="unified-node"
+              data-scale={position.scale}
+              data-area-active={!area || area === category.id}
+              data-lineage={lineageState}
+              data-muted={muted}
+              style={{
+                left: `${position.x / 10}%`,
+                top: position.y,
+                width: `${position.width / 10}%`,
+                height: position.height,
+              }}
+              onClick={() => choosePaper(key)}
+              aria-pressed={key === selected}
+              aria-label={`${papers[nodes[key].publicationId].title}, ${year(key)}, ${category.title}`}
+              title={papers[nodes[key].publicationId].title}
+            >
+              <strong>{nodes[key].label}</strong>
+              <span>{year(key)}</span>
+              {lineageState !== 'none' && (
+                <small>
+                  {lineageState === 'selected'
+                    ? 'Selected'
+                    : lineageState === 'before'
+                      ? 'Earlier'
+                      : 'Later'}
+                </small>
+              )}
+            </button>
+          );
+        })}
+      </div>
+      <p className="unified-note">
+        Arrows show how one project informed another; they are not citation
+        links.
+      </p>
+      <div className="unified-reader" id="research-reader" aria-live="polite">
+        {selectedPaper && selected ? (
           <>
-            <span>{active.title}</span>
-            {selected
-              ? ` / ${nodes[selected].label}${external ? ' (related area preview)' : ''}`
-              : ' / Select a paper'}
+            <div className="unified-reader-heading">
+              <div>
+                <span>
+                  {selectedCategory?.title} · {year(selected)}
+                </span>
+                <h3>{selectedPaper.title.replace('✦', '')}</h3>
+              </div>
+              <Button
+                variant="ghost"
+                onClick={() => dispatch({ type: 'clear-paper' })}
+                aria-label="Close paper details"
+              >
+                ×
+              </Button>
+            </div>
+            <p className="unified-authors">{selectedPaper.authors}</p>
+            <p className="unified-venue">{selectedPaper.venue}</p>
+            <div className="unified-reader-grid">
+              <div>
+                <p>{selectedPaper.note}</p>
+                <div className="unified-links">
+                  {selectedPaper.url && (
+                    <a href={selectedPaper.url}>Read paper ↗</a>
+                  )}
+                  {selected === 'c.4' && (
+                    <a href="https://github.com/KindOPSTAR/VRMN-bD">
+                      Dataset & demo ↗
+                    </a>
+                  )}
+                  {selected === 'arXiv.2' && (
+                    <a href="https://github.com/KindOPSTAR/QualiGPT">Code ↗</a>
+                  )}
+                </div>
+                <div className="unified-connections">
+                  {related('before')}
+                  {related('after')}
+                </div>
+              </div>
+              <PublicationFigure
+                key={selectedPaper.id}
+                publicationId={selectedPaper.id}
+                title={selectedPaper.title}
+              />
+            </div>
           </>
         ) : (
-          'Six research areas. Select one to explore its development.'
-        )}
-      </p>
-      <div
-        className={`area-navigation ${active ? 'is-compact' : ''}`}
-        aria-label="Research areas"
-      >
-        {categories.map((c, i) => (
-          <button
-            className="area-option"
-            key={c.id}
-            onClick={() => dispatch({ type: 'area', area: c.id })}
-            aria-pressed={area === c.id}
-            aria-controls="research-workspace"
-          >
-            <span className="area-number">0{i + 1}</span>
-            <strong>{c.title}</strong>
-            <span className="area-description">{c.description}</span>
-            <span className="area-count">
-              {c.keys.length}
-              <span> works</span>
-            </span>
-          </button>
-        ))}
-      </div>
-      <div id="research-workspace">
-        {active && (
-          <div className="research-workspace">
-            <div className="graph-column" ref={graphFrame}>
-              <div className="graph-caption">
-                <span>Earlier work ↓ later developments</span>
-                <span>{keys.length} works</span>
-              </div>
-              <div
-                className="branch-graph"
-                style={{ height: layout.height }}
-                aria-label={`Research development in ${active.title}`}
-              >
-                <svg
-                  viewBox={`0 0 1000 ${layout.height}`}
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                >
-                  <defs>
-                    <marker
-                      id="branch-arrow"
-                      viewBox="0 0 8 8"
-                      refX="7"
-                      refY="4"
-                      markerWidth="5"
-                      markerHeight="5"
-                      orient="auto"
-                    >
-                      <path d="M0 0L8 4L0 8Z" fill="context-stroke" />
-                    </marker>
-                  </defs>
-                  {layout.links.map((e) => {
-                    const highlighted = e.from === anchor || e.to === anchor;
-                    return (
-                      <polyline
-                        key={`${e.from}-${e.to}`}
-                        points={branchEdgePoints(layout, e)
-                          .map((p) => `${p.x},${p.y}`)
-                          .join(' ')}
-                        fill="none"
-                        strokeLinejoin="round"
-                        stroke={highlighted ? '#ad3c48' : '#c7c4c4'}
-                        strokeWidth={highlighted ? 2 : 1.2}
-                        opacity={anchor && !highlighted ? 0.25 : 1}
-                        vectorEffect="non-scaling-stroke"
-                        markerEnd="url(#branch-arrow)"
-                      />
-                    );
-                  })}
-                </svg>
-                {keys.map((key) => {
-                  const pos = layout.positions[key];
-                  const relation =
-                    key === anchor
-                      ? 'selected'
-                      : before.has(key)
-                        ? 'before'
-                        : after.has(key)
-                          ? 'after'
-                          : 'other';
-                  return (
-                    <button
-                      key={key}
-                      className="branch-node"
-                      data-relation={relation}
-                      data-dimmed={!!anchor && relation === 'other'}
-                      style={{
-                        left: `${pos.x / 10}%`,
-                        top: pos.y,
-                        width: `${layout.width / 10}%`,
-                      }}
-                      onClick={() => choose(key)}
-                      aria-pressed={key === selected}
-                      aria-controls="research-reader"
-                      title={papers[nodes[key].publicationId].title}
-                    >
-                      <strong>{nodes[key].label}</strong>
-                      <span>
-                        {year(key)} ·{' '}
-                        {key.startsWith('pat')
-                          ? 'Patent'
-                          : key.startsWith('arXiv')
-                            ? 'Preprint'
-                            : 'Publication'}
-                      </span>
-                      {anchor && relation !== 'other' && (
-                        <small>
-                          {relation === 'selected'
-                            ? external
-                              ? 'Starting paper'
-                              : 'Selected'
-                            : relation === 'before'
-                              ? 'Builds on'
-                              : 'Leads to'}
-                        </small>
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
-              <p className="graph-footnote">
-                Arrows indicate research development, not citations.
-              </p>
-              {paper && (
-                <div className="mobile-reader-action">
-                  <span>{nodes[selected!].label}</span>
-                  <Button variant="outline" onClick={() => setSheetOpen(true)}>
-                    Read details ↗
-                  </Button>
-                </div>
-              )}
-            </div>
-            <aside
-              className="research-reader"
-              id="research-reader"
-              aria-label="Paper details"
-            >
-              <div className="reader-caption">
-                {paper ? 'Selected paper' : 'Explore a connection'}
-              </div>
-              {detail}
-            </aside>
-          </div>
+          <p className="unified-reader-empty">
+            Select any paper to highlight its full research lineage and view
+            details.
+          </p>
         )}
       </div>
-      <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
-        <SheetContent className="research-reader-sheet">
-          <SheetTitle>Paper & connections</SheetTitle>
-          <SheetDescription>
-            Explore related work; close this panel to return to the map.
-          </SheetDescription>
-          <div className="sheet-reader-nav">
-            <Button
-              variant="ghost"
-              disabled={!navigation.past.length}
-              onClick={() => dispatch({ type: 'back' })}
-            >
-              ← Previous selection
-            </Button>
-          </div>
-          {detail}
-        </SheetContent>
-      </Sheet>
     </section>
   );
 }
