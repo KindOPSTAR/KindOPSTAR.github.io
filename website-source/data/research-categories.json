@@ -1,0 +1,38 @@
+[
+  {
+    "id": "qual",
+    "title": "AI for qualitative research",
+    "description": "Research tools, methods & ethics",
+    "keys": ["arXiv.2", "tut.1", "arXiv.4", "j.5", "c.11", "c.17", "p.9"]
+  },
+  {
+    "id": "affect",
+    "title": "Affect & embodied interaction",
+    "description": "Emotion, multimodal systems & VR",
+    "keys": ["c.4", "c.9", "p.6", "c.14", "demo.1", "p.2", "j.3", "c.12", "c.3"]
+  },
+  {
+    "id": "home",
+    "title": "Intelligent environments",
+    "description": "Home sensing, agents & safety",
+    "keys": ["j.1", "pat.2", "p.1", "pat.1", "p.7", "p.10", "j.2"]
+  },
+  {
+    "id": "access",
+    "title": "Accessible AI",
+    "description": "Assistance, privacy & uncertainty",
+    "keys": ["c.6", "p.4", "arXiv.3", "c.8", "p.8"]
+  },
+  {
+    "id": "social",
+    "title": "Social computing",
+    "description": "Communities, platforms & creators",
+    "keys": ["c.1", "c.2", "c.5", "p.3", "p.5", "c.15", "c.16"]
+  },
+  {
+    "id": "trust",
+    "title": "Trust, learning & governance",
+    "description": "Human agency & responsible AI",
+    "keys": ["arXiv.1", "j.4", "c.7", "c.10", "c.13"]
+  }
+]
