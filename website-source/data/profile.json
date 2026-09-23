@@ -8,11 +8,7 @@
       "venue": "CHI 2026",
       "note": "A 40-participant study of tangible interaction and immersive VR, examining positive affect and perceived relaxation.",
       "url": "https://doi.org/10.1145/3772318.3790548",
-      "tags": [
-        "VR",
-        "embodiment",
-        "affective computing"
-      ],
+      "tags": ["VR", "embodiment", "affective computing"],
       "selected": true
     },
     {
@@ -23,11 +19,7 @@
       "venue": "DIS 2026 Companion · first author is an undergraduate mentee",
       "note": "Pseudo-vocalized embodiment lets someone express and discharge emotion without making a sound — catharsis routed through the body instead of the voice.",
       "url": "https://doi.org/10.1145/3802974.3808033",
-      "tags": [
-        "embodiment",
-        "affective computing",
-        "VR"
-      ],
+      "tags": ["embodiment", "affective computing", "VR"],
       "selected": false
     },
     {
@@ -38,11 +30,7 @@
       "venue": "ACM UbiComp 2026 Companion · led a five-student team across five institutions",
       "note": "Ambient prompt injection is a new attack surface — text printed on a box in the kitchen can hijack a home agent. This builds and evaluates a defence against it.",
       "url": "",
-      "tags": [
-        "AI safety",
-        "agentic AI",
-        "smart home"
-      ],
+      "tags": ["AI safety", "agentic AI", "smart home"],
       "selected": true
     },
     {
@@ -53,11 +41,7 @@
       "venue": "IUI 2026 Companion",
       "note": "Hands domestic decision-making to a multimodal LLM and asks what an autonomous home-agent architecture actually needs to be safe to run.",
       "url": "https://doi.org/10.1145/3742414.3794710",
-      "tags": [
-        "smart home",
-        "agentic AI",
-        "multimodal"
-      ],
+      "tags": ["smart home", "agentic AI", "multimodal"],
       "selected": false
     },
     {
@@ -68,10 +52,7 @@
       "venue": "Tutorial, IUI 2026, Limassol · lead organizer and instructor",
       "note": "Turns the whole research programme into something teachable — the practices and failure modes, not just the findings.",
       "url": "https://doi.org/10.1145/3742414.3794947",
-      "tags": [
-        "AI4Qual",
-        "education"
-      ],
+      "tags": ["AI4Qual", "education"],
       "selected": false
     },
     {
@@ -82,10 +63,7 @@
       "venue": "ICLR 2025 Workshop on Bidirectional Human–AI Alignment · Oral at CHI ’25",
       "note": "A division of labour for annotation: the model proposes objects and labels, the human arbitrates — faster and better calibrated than either alone.",
       "url": "https://openreview.net/pdf?id=ZPTvEUXzSq",
-      "tags": [
-        "LLM evaluation",
-        "multimodal"
-      ],
+      "tags": ["LLM evaluation", "multimodal"],
       "selected": false
     },
     {
@@ -96,11 +74,7 @@
       "venue": "GROUP 2025 Companion",
       "note": "Puts real-time multimodal AI into the travel loop for blind users, testing whether the latency and the language hold up outdoors rather than on a bench.",
       "url": "https://doi.org/10.1145/3688828.3699636",
-      "tags": [
-        "accessibility",
-        "multimodal",
-        "agentic AI"
-      ],
+      "tags": ["accessibility", "multimodal", "agentic AI"],
       "selected": false
     },
     {
@@ -111,11 +85,7 @@
       "venue": "IEEE ISMAR-Adjunct 2025",
       "note": "Adds a furry stress ball as a haptic channel in VR — physical squeezing as a relaxation modality rather than one more screen affordance.",
       "url": "https://doi.org/10.1109/ISMAR-Adjunct68609.2025.00128",
-      "tags": [
-        "VR",
-        "embodiment",
-        "affective computing"
-      ],
+      "tags": ["VR", "embodiment", "affective computing"],
       "selected": false
     },
     {
@@ -126,11 +96,7 @@
       "venue": "IEEE VR 2024",
       "note": "A multimodal dataset of natural fear behaviour — pose, physiology, gaze — captured in stand-up VR rather than staged lab conditions, plus a benchmark on top of it.",
       "url": "https://doi.org/10.1109/VR58804.2024.00054",
-      "tags": [
-        "affective computing",
-        "VR",
-        "multimodal"
-      ],
+      "tags": ["affective computing", "VR", "multimodal"],
       "selected": true
     },
     {
@@ -141,10 +107,7 @@
       "venue": "CHI 2024",
       "note": "Privacy in remote sighted assistance is a framing problem, not a blurring problem: the user decides what enters the shared bubble.",
       "url": "https://doi.org/10.1145/3613904.3642030",
-      "tags": [
-        "accessibility",
-        "privacy"
-      ],
+      "tags": ["accessibility", "privacy"],
       "selected": false
     },
     {
@@ -155,10 +118,7 @@
       "venue": "arXiv:2310.07061",
       "note": "Packages GPT into a purpose-built coding tool, so the question stops being “ChatGPT versus a human” and becomes a question about tool design.",
       "url": "https://arxiv.org/abs/2310.07061",
-      "tags": [
-        "AI4Qual",
-        "LLM evaluation"
-      ],
+      "tags": ["AI4Qual", "LLM evaluation"],
       "selected": false
     },
     {
@@ -169,10 +129,7 @@
       "venue": "ChCHI 2023",
       "note": "Multi-channel sensing and fusion in a real home — RGB, depth, IR, audio, gait — with an honest account of what breaks at petabyte scale.",
       "url": "https://doi.org/10.1145/3629606.3629638",
-      "tags": [
-        "smart home",
-        "multimodal"
-      ],
+      "tags": ["smart home", "multimodal"],
       "selected": false
     },
     {
@@ -183,9 +140,7 @@
       "venue": "Patent, China, CN115291718A",
       "note": "The human–machine interaction layer for the smart-home environment, filed as a patent.",
       "url": "https://patents.google.com/patent/CN115291718A/en",
-      "tags": [
-        "smart home"
-      ],
+      "tags": ["smart home"],
       "selected": false
     },
     {
@@ -196,10 +151,7 @@
       "venue": "Packaging Engineering, 43(16), 2022",
       "note": "The instrumented smart-home platform everything downstream runs on — sensing hardware, capture pipeline, and the experimental protocol around it.",
       "url": "https://link.oversea.cnki.net/doi/10.19554/j.cnki.1001-3563.2022.16.005",
-      "tags": [
-        "smart home",
-        "multimodal"
-      ],
+      "tags": ["smart home", "multimodal"],
       "selected": false
     },
     {
@@ -210,9 +162,7 @@
       "venue": "Patent, China, 2022-09",
       "note": "The testbed and its data-processing method, filed as a patent.",
       "url": "",
-      "tags": [
-        "smart home"
-      ],
+      "tags": ["smart home"],
       "selected": false
     },
     {
@@ -223,10 +173,7 @@
       "venue": "IMX 2026",
       "note": "Human and AI-powered support in the same communities, side by side: engagement, response dynamics, and what changes in the exchange itself.",
       "url": "https://doi.org/10.1145/3788851.3805015",
-      "tags": [
-        "social computing",
-        "agentic AI"
-      ],
+      "tags": ["social computing", "agentic AI"],
       "selected": false
     },
     {
@@ -237,9 +184,7 @@
       "venue": "CSCW 2026",
       "note": "Where third-party developers go for help and how they give it — the support economy underneath the tooling economy.",
       "url": "https://doi.org/10.1145/3817021",
-      "tags": [
-        "social computing"
-      ],
+      "tags": ["social computing"],
       "selected": false
     },
     {
@@ -250,11 +195,7 @@
       "venue": "HCOMP 2026",
       "note": "When the interviewer is a machine, disclosure changes shape — what participants tell a bot, what they withhold, and how breakdowns erode trust mid-interview.",
       "url": "",
-      "tags": [
-        "AI4Qual",
-        "trust",
-        "agentic AI"
-      ],
+      "tags": ["AI4Qual", "trust", "agentic AI"],
       "selected": true
     },
     {
@@ -265,10 +206,7 @@
       "venue": "arXiv:2510.20123",
       "note": "AI-mediated support for parents helping children learn — the mediation sits between two people, not between a person and a task.",
       "url": "https://arxiv.org/abs/2510.20123",
-      "tags": [
-        "education",
-        "social computing"
-      ],
+      "tags": ["education", "social computing"],
       "selected": false
     },
     {
@@ -279,10 +217,7 @@
       "venue": "AHFE 2025",
       "note": "Measures human–LLM inter-rater reliability across both inductive and deductive coding, separating real agreement from coincidental agreement.",
       "url": "",
-      "tags": [
-        "AI4Qual",
-        "LLM evaluation"
-      ],
+      "tags": ["AI4Qual", "LLM evaluation"],
       "selected": false
     },
     {
@@ -293,11 +228,7 @@
       "venue": "MRAC 2025",
       "note": "Benchmarks what general-purpose multimodal models can and cannot infer about emotion from faces — the empirical ceiling for a technology already deployed in hiring and education.",
       "url": "https://doi.org/10.1145/3746270.3760233",
-      "tags": [
-        "affective computing",
-        "LLM evaluation",
-        "multimodal"
-      ],
+      "tags": ["affective computing", "LLM evaluation", "multimodal"],
       "selected": true
     },
     {
@@ -308,11 +239,7 @@
       "venue": "CHI 2025",
       "note": "Interaction traces of visually impaired users with LMMs — what they ask, what they trust, and where perception-first design assumptions fail them.",
       "url": "https://doi.org/10.1145/3706598.3714210",
-      "tags": [
-        "accessibility",
-        "multimodal",
-        "LLM evaluation"
-      ],
+      "tags": ["accessibility", "multimodal", "LLM evaluation"],
       "selected": false
     },
     {
@@ -323,11 +250,7 @@
       "venue": "Computers in Human Behavior: Artificial Humans, 2025",
       "note": "Traces the full arc from exploring ChatGPT, to using it on live projects, to redesigning it — and shows trust is negotiated at the point of re-scoping, not at first contact.",
       "url": "https://doi.org/10.1016/j.chbah.2025.100144",
-      "tags": [
-        "AI4Qual",
-        "trust",
-        "LLM evaluation"
-      ],
+      "tags": ["AI4Qual", "trust", "LLM evaluation"],
       "selected": true
     },
     {
@@ -338,10 +261,7 @@
       "venue": "CHI EA 2025",
       "note": "First look at how an established VR community absorbs generative AI into its everyday support practices.",
       "url": "https://doi.org/10.1145/3706599.3720120",
-      "tags": [
-        "social computing",
-        "VR"
-      ],
+      "tags": ["social computing", "VR"],
       "selected": false
     },
     {
@@ -352,10 +272,7 @@
       "venue": "arXiv:2407.08882",
       "note": "Documents the practices blind users were already inventing around LMM assistants, well ahead of any design guidance existing for them.",
       "url": "https://arxiv.org/abs/2407.08882",
-      "tags": [
-        "accessibility",
-        "multimodal"
-      ],
+      "tags": ["accessibility", "multimodal"],
       "selected": false
     },
     {
@@ -366,10 +283,7 @@
       "venue": "arXiv:2407.14925",
       "note": "Puts QualiGPT in front of working researchers and reports where it saves labour and where they refuse to delegate.",
       "url": "https://arxiv.org/abs/2407.14925",
-      "tags": [
-        "AI4Qual",
-        "LLM evaluation"
-      ],
+      "tags": ["AI4Qual", "LLM evaluation"],
       "selected": false
     },
     {
@@ -380,9 +294,7 @@
       "venue": "CHI 2024 Best Paper Honorable Mention",
       "note": "Community management on Twitch runs on tools built by unpaid third-party developers — the platform depends on labour it does not acknowledge.",
       "url": "https://doi.org/10.1145/3613904.3642787",
-      "tags": [
-        "social computing"
-      ],
+      "tags": ["social computing"],
       "selected": false
     },
     {
@@ -393,10 +305,7 @@
       "venue": "IEEE Transactions on Games, 2024",
       "note": "How players actually cope with fear in VR — the reasons behind the signals that VRMN-bD records.",
       "url": "https://doi.org/10.1109/TG.2024.3403768",
-      "tags": [
-        "affective computing",
-        "VR"
-      ],
+      "tags": ["affective computing", "VR"],
       "selected": false
     },
     {
@@ -407,9 +316,7 @@
       "venue": "CHI EA 2024",
       "note": "How creators fold generative AI into production, and how much of that they choose to show their audience.",
       "url": "https://doi.org/10.1145/3613905.3651057",
-      "tags": [
-        "social computing"
-      ],
+      "tags": ["social computing"],
       "selected": false
     },
     {
@@ -420,9 +327,7 @@
       "venue": "ChCHI 2023",
       "note": "International travellers rebuilt a broken travel network through personal infrastructuring work — labour that was invisible, uncompensated, and load-bearing.",
       "url": "https://doi.org/10.1145/3629606.3629655",
-      "tags": [
-        "social computing"
-      ],
+      "tags": ["social computing"],
       "selected": false
     },
     {
@@ -433,9 +338,7 @@
       "venue": "Science & Technology Review, 41(8), 2023",
       "note": "Maps the frontier of smart-home research and locates the open problems — the survey that framed the later agent work.",
       "url": "https://doi.org/10.3981/j.issn.1000-7857.2023.08.004",
-      "tags": [
-        "smart home"
-      ],
+      "tags": ["smart home"],
       "selected": false
     },
     {
@@ -446,10 +349,7 @@
       "venue": "ChCHI 2023",
       "note": "First pass at what fear feels like from inside a VR horror game, in players’ own accounts — the study that motivated collecting the signals.",
       "url": "https://doi.org/10.1145/3629606.3629646",
-      "tags": [
-        "affective computing",
-        "VR"
-      ],
+      "tags": ["affective computing", "VR"],
       "selected": false
     },
     {
@@ -460,9 +360,7 @@
       "venue": "DG.O 2022",
       "note": "Regression modelling and multilingual sentiment analysis on official pandemic messaging — which forms of government communication actually landed.",
       "url": "https://doi.org/10.1145/3543434.3543642",
-      "tags": [
-        "social computing"
-      ],
+      "tags": ["social computing"],
       "selected": false
     },
     {
@@ -473,10 +371,7 @@
       "venue": "CHI 2026",
       "note": "Parents’ own criteria for responsible AI in children’s learning, which do not line up neatly with published responsible-AI principles.",
       "url": "https://doi.org/10.48550/arXiv.2510.24070",
-      "tags": [
-        "education",
-        "trust"
-      ],
+      "tags": ["education", "trust"],
       "selected": false
     },
     {
@@ -487,10 +382,7 @@
       "venue": "ASPIRE · 69th HFES Annual Meeting, 2026",
       "note": "An assistive navigator that hides its uncertainty is more dangerous than one that admits it; this asks how a system should say “I am not sure” usefully.",
       "url": "",
-      "tags": [
-        "accessibility",
-        "trust"
-      ],
+      "tags": ["accessibility", "trust"],
       "selected": false
     },
     {
@@ -501,10 +393,7 @@
       "venue": "CHIWORK Adjunct 2026",
       "note": "AI-generated follow-up questions are where interviewing ethics concentrate — what an LLM in the loop should and should not be permitted to ask.",
       "url": "https://doi.org/10.1145/3805029.3818282",
-      "tags": [
-        "AI4Qual",
-        "trust"
-      ],
+      "tags": ["AI4Qual", "trust"],
       "selected": false
     },
     {
@@ -515,10 +404,7 @@
       "venue": "FAccT 2025",
       "note": "Trust and administrative burden are coupled: an LLM assistant can cut learning costs in a benefits system while quietly relocating burden somewhere else.",
       "url": "https://doi.org/10.1145/3715275.3732077",
-      "tags": [
-        "trust",
-        "social computing"
-      ],
+      "tags": ["trust", "social computing"],
       "selected": false
     },
     {
@@ -529,10 +415,7 @@
       "venue": "iConference 2024",
       "note": "Reads VR through Ihde: the headset is not a window but a mediating instrument, and that reframing changes what counts as a faithful experience.",
       "url": "https://doi.org/10.1007/978-3-031-57860-1_6",
-      "tags": [
-        "VR",
-        "embodiment"
-      ],
+      "tags": ["VR", "embodiment"],
       "selected": false
     },
     {
@@ -543,10 +426,7 @@
       "venue": "SIGITE 2024",
       "note": "LLMs in education from the students’ side rather than the institution’s — what they use them for, and what they think it is costing them.",
       "url": "https://doi.org/10.1145/3686852.3687069",
-      "tags": [
-        "education",
-        "LLM evaluation"
-      ],
+      "tags": ["education", "LLM evaluation"],
       "selected": false
     },
     {
@@ -557,10 +437,7 @@
       "venue": "Future Internet, 16(10), 2024",
       "note": "Compares AI guidance across Big Ten universities; the governance gap sits between policy language and instructional practice, not in the absence of policy.",
       "url": "https://doi.org/10.3390/fi16100354",
-      "tags": [
-        "trust",
-        "education"
-      ],
+      "tags": ["trust", "education"],
       "selected": false
     }
   ],
@@ -596,7 +473,7 @@
     "I build and empirically evaluate LLM- and LMM-based systems that infer meaning from sensitive material — qualitative interview transcripts, facial and physiological affect signals, ambient multimodal home sensing, and camera-mediated assistance for people with visual impairments — and I study how those systems reshape trust, disclosure, control, and agency for the people whose data they process.",
     "When an AI system mediates the interpretation of personal experience, who retains control over what is inferred, retained, and disclosed?",
     "I answer that in three registers at once — I build the systems, I study what people do with them, and I follow what that does downstream. Every paper below sits in one of the three.",
-    "My dissertation, Integrating Large Language Models into the Qualitative Research Process, takes that question where it bites hardest: qualitative research, where scholars routinely route confidential participant data through commercial models. I work closely with Prof. Syed M. Billah, Prof. ChanMin Kim, and Prof. Xinyi Fu. In 2025 the college named me the recipient of the IST Ph.D. Student Award for Research Excellence.",
+    "I work closely with Prof. Syed M. Billah, Prof. ChanMin Kim, and Prof. Xinyi Fu. In 2025, I received the IST Ph.D. Student Award for Research Excellence.",
     "Before Penn State I spent a year as a full-time research assistant at The Future Laboratory, an interdisciplinary HCI lab at Tsinghua University, building the multimodal affect and smart-home testbeds that much of my systems work still draws on. I hold an M.Sc. in Computer and Mathematical Sciences with first-class honours from Auckland University of Technology (2021) and a B.Sc. with a double major in Computer Science and Data Science from Massey University (2019), both in New Zealand.",
     "Human-Centered AI · Human–AI Interaction · Trustworthy and Responsible AI · LLM/LMM Evaluation and Human Oversight · Affective Computing · Multimodal and Agentic Systems · CSCW · Accessibility · Ubiquitous Computing"
   ],
