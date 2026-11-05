@@ -1,11 +1,28 @@
 {
   "nodes": [
     {
+      "key": "dc.1",
+      "tags": ["qual"],
+      "arc": "con",
+      "label": "Beyond Assistance",
+      "x": 1200,
+      "y": 696,
+      "color": "#5B3FBF",
+      "publicationId": "pub-dc1"
+    },
+    {
+      "key": "j.6",
+      "tags": ["qual", "trust", "llmeval"],
+      "arc": "evd",
+      "label": "AI-supported follow-ups",
+      "x": 1200,
+      "y": 478,
+      "color": "#5B3FBF",
+      "publicationId": "pub-j6"
+    },
+    {
       "key": "j.1",
-      "tags": [
-        "home",
-        "multimodal"
-      ],
+      "tags": ["home", "multimodal"],
       "arc": "sys",
       "label": "Home platform",
       "x": 336.0,
@@ -15,9 +32,7 @@
     },
     {
       "key": "pat.2",
-      "tags": [
-        "home"
-      ],
+      "tags": ["home"],
       "arc": "sys",
       "label": "Patent: testbed",
       "x": 336.0,
@@ -27,10 +42,7 @@
     },
     {
       "key": "arXiv.2",
-      "tags": [
-        "qual",
-        "llmeval"
-      ],
+      "tags": ["qual", "llmeval"],
       "arc": "sys",
       "label": "QualiGPT",
       "x": 552.0,
@@ -40,10 +52,7 @@
     },
     {
       "key": "p.1",
-      "tags": [
-        "home",
-        "multimodal"
-      ],
+      "tags": ["home", "multimodal"],
       "arc": "sys",
       "label": "Sensor network",
       "x": 552.0,
@@ -53,9 +62,7 @@
     },
     {
       "key": "pat.1",
-      "tags": [
-        "home"
-      ],
+      "tags": ["home"],
       "arc": "sys",
       "label": "Patent: interaction",
       "x": 552.0,
@@ -65,11 +72,7 @@
     },
     {
       "key": "c.4",
-      "tags": [
-        "affect",
-        "vr",
-        "multimodal"
-      ],
+      "tags": ["affect", "vr", "multimodal"],
       "arc": "sys",
       "label": "VRMN-bD",
       "x": 768.0,
@@ -79,10 +82,7 @@
     },
     {
       "key": "c.6",
-      "tags": [
-        "access",
-        "privacy"
-      ],
+      "tags": ["access", "privacy"],
       "arc": "sys",
       "label": "BubbleCam",
       "x": 768.0,
@@ -92,10 +92,7 @@
     },
     {
       "key": "c.9",
-      "tags": [
-        "llmeval",
-        "multimodal"
-      ],
+      "tags": ["llmeval", "multimodal"],
       "arc": "sys",
       "label": "Image annotation",
       "x": 984.0,
@@ -105,11 +102,7 @@
     },
     {
       "key": "p.6",
-      "tags": [
-        "vr",
-        "embodiment",
-        "affect"
-      ],
+      "tags": ["vr", "embodiment", "affect"],
       "arc": "sys",
       "label": "VR Calm+",
       "x": 984.0,
@@ -119,11 +112,7 @@
     },
     {
       "key": "p.4",
-      "tags": [
-        "access",
-        "multimodal",
-        "agents"
-      ],
+      "tags": ["access", "multimodal", "agents"],
       "arc": "sys",
       "label": "NaviGPT",
       "x": 984.0,
@@ -133,11 +122,7 @@
     },
     {
       "key": "c.14",
-      "tags": [
-        "vr",
-        "embodiment",
-        "affect"
-      ],
+      "tags": ["vr", "embodiment", "affect"],
       "arc": "sys",
       "label": "VR Calm Plus",
       "x": 1200.0,
@@ -147,11 +132,7 @@
     },
     {
       "key": "demo.1",
-      "tags": [
-        "embodiment",
-        "affect",
-        "vr"
-      ],
+      "tags": ["embodiment", "affect", "vr"],
       "arc": "sys",
       "label": "Wolfborn",
       "x": 1200.0,
@@ -161,11 +142,7 @@
     },
     {
       "key": "p.7",
-      "tags": [
-        "home",
-        "agents",
-        "multimodal"
-      ],
+      "tags": ["home", "agents", "multimodal"],
       "arc": "sys",
       "label": "AIoT home agent",
       "x": 1200.0,
@@ -175,11 +152,7 @@
     },
     {
       "key": "p.10",
-      "tags": [
-        "safety",
-        "agents",
-        "home"
-      ],
+      "tags": ["safety", "agents", "home"],
       "arc": "sys",
       "label": "PromptShield Home",
       "x": 1200.0,
@@ -189,10 +162,7 @@
     },
     {
       "key": "tut.1",
-      "tags": [
-        "qual",
-        "edu"
-      ],
+      "tags": ["qual", "edu"],
       "arc": "sys",
       "label": "AI4Qual",
       "x": 1200.0,
@@ -202,9 +172,7 @@
     },
     {
       "key": "c.1",
-      "tags": [
-        "social"
-      ],
+      "tags": ["social"],
       "arc": "evd",
       "label": "Gov. communication",
       "x": 336.0,
@@ -214,10 +182,7 @@
     },
     {
       "key": "p.2",
-      "tags": [
-        "affect",
-        "vr"
-      ],
+      "tags": ["affect", "vr"],
       "arc": "evd",
       "label": "Decoding Fear",
       "x": 552.0,
@@ -227,9 +192,7 @@
     },
     {
       "key": "c.2",
-      "tags": [
-        "social"
-      ],
+      "tags": ["social"],
       "arc": "evd",
       "label": "Travel network",
       "x": 552.0,
@@ -239,9 +202,7 @@
     },
     {
       "key": "j.2",
-      "tags": [
-        "home"
-      ],
+      "tags": ["home"],
       "arc": "evd",
       "label": "Smart-home review",
       "x": 552.0,
@@ -251,10 +212,7 @@
     },
     {
       "key": "arXiv.4",
-      "tags": [
-        "qual",
-        "llmeval"
-      ],
+      "tags": ["qual", "llmeval"],
       "arc": "evd",
       "label": "QualiGPT in use",
       "x": 768.0,
@@ -264,10 +222,7 @@
     },
     {
       "key": "j.3",
-      "tags": [
-        "affect",
-        "vr"
-      ],
+      "tags": ["affect", "vr"],
       "arc": "evd",
       "label": "Fear & coping",
       "x": 768.0,
@@ -277,9 +232,7 @@
     },
     {
       "key": "c.5",
-      "tags": [
-        "social"
-      ],
+      "tags": ["social"],
       "arc": "evd",
       "label": "Twitch tool devs",
       "x": 768.0,
@@ -289,9 +242,7 @@
     },
     {
       "key": "p.3",
-      "tags": [
-        "social"
-      ],
+      "tags": ["social"],
       "arc": "evd",
       "label": "YouTubers & GenAI",
       "x": 768.0,
@@ -301,10 +252,7 @@
     },
     {
       "key": "arXiv.3",
-      "tags": [
-        "access",
-        "multimodal"
-      ],
+      "tags": ["access", "multimodal"],
       "arc": "evd",
       "label": "LMM practices",
       "x": 768.0,
@@ -314,11 +262,7 @@
     },
     {
       "key": "j.5",
-      "tags": [
-        "qual",
-        "trust",
-        "llmeval"
-      ],
+      "tags": ["qual", "trust", "llmeval"],
       "arc": "evd",
       "label": "AI in qual. work",
       "x": 984.0,
@@ -328,10 +272,7 @@
     },
     {
       "key": "c.11",
-      "tags": [
-        "qual",
-        "llmeval"
-      ],
+      "tags": ["qual", "llmeval"],
       "arc": "evd",
       "label": "Coding reliability",
       "x": 984.0,
@@ -341,11 +282,7 @@
     },
     {
       "key": "c.12",
-      "tags": [
-        "affect",
-        "llmeval",
-        "multimodal"
-      ],
+      "tags": ["affect", "llmeval", "multimodal"],
       "arc": "evd",
       "label": "Face emotion + LMM",
       "x": 984.0,
@@ -355,11 +292,7 @@
     },
     {
       "key": "c.8",
-      "tags": [
-        "access",
-        "multimodal",
-        "llmeval"
-      ],
+      "tags": ["access", "multimodal", "llmeval"],
       "arc": "evd",
       "label": "BVI & LMM use",
       "x": 984.0,
@@ -369,10 +302,7 @@
     },
     {
       "key": "p.5",
-      "tags": [
-        "social",
-        "vr"
-      ],
+      "tags": ["social", "vr"],
       "arc": "evd",
       "label": "VRChat Discord",
       "x": 984.0,
@@ -382,10 +312,7 @@
     },
     {
       "key": "arXiv.1",
-      "tags": [
-        "edu",
-        "social"
-      ],
+      "tags": ["edu", "social"],
       "arc": "evd",
       "label": "Learning Together",
       "x": 984.0,
@@ -395,11 +322,7 @@
     },
     {
       "key": "c.17",
-      "tags": [
-        "qual",
-        "trust",
-        "agents"
-      ],
+      "tags": ["qual", "trust", "agents"],
       "arc": "evd",
       "label": "Bot interviewer",
       "x": 1200.0,
@@ -409,10 +332,7 @@
     },
     {
       "key": "c.15",
-      "tags": [
-        "social",
-        "agents"
-      ],
+      "tags": ["social", "agents"],
       "arc": "evd",
       "label": "Human vs. AI help",
       "x": 1200.0,
@@ -422,9 +342,7 @@
     },
     {
       "key": "c.16",
-      "tags": [
-        "social"
-      ],
+      "tags": ["social"],
       "arc": "evd",
       "label": "Twitch devs II",
       "x": 1200.0,
@@ -434,10 +352,7 @@
     },
     {
       "key": "j.4",
-      "tags": [
-        "trust",
-        "edu"
-      ],
+      "tags": ["trust", "edu"],
       "arc": "con",
       "label": "AI governance",
       "x": 768.0,
@@ -447,10 +362,7 @@
     },
     {
       "key": "c.3",
-      "tags": [
-        "vr",
-        "embodiment"
-      ],
+      "tags": ["vr", "embodiment"],
       "arc": "con",
       "label": "Instrumental realism",
       "x": 768.0,
@@ -460,10 +372,7 @@
     },
     {
       "key": "c.7",
-      "tags": [
-        "edu",
-        "llmeval"
-      ],
+      "tags": ["edu", "llmeval"],
       "arc": "con",
       "label": "Students & LLMs",
       "x": 768.0,
@@ -473,10 +382,7 @@
     },
     {
       "key": "c.10",
-      "tags": [
-        "trust",
-        "social"
-      ],
+      "tags": ["trust", "social"],
       "arc": "con",
       "label": "Trust & burden",
       "x": 984.0,
@@ -486,10 +392,7 @@
     },
     {
       "key": "p.9",
-      "tags": [
-        "qual",
-        "trust"
-      ],
+      "tags": ["qual", "trust"],
       "arc": "con",
       "label": "Follow-up ethics",
       "x": 1200.0,
@@ -499,10 +402,7 @@
     },
     {
       "key": "c.13",
-      "tags": [
-        "edu",
-        "trust"
-      ],
+      "tags": ["edu", "trust"],
       "arc": "con",
       "label": "Parents & RAI",
       "x": 1200.0,
@@ -512,10 +412,7 @@
     },
     {
       "key": "p.8",
-      "tags": [
-        "access",
-        "trust"
-      ],
+      "tags": ["access", "trust"],
       "arc": "con",
       "label": "AI uncertainty",
       "x": 1200.0,
@@ -525,6 +422,8 @@
     }
   ],
   "edges": [
+    { "from": "j.5", "to": "dc.1" },
+    { "from": "p.9", "to": "j.6" },
     {
       "from": "arXiv.2",
       "to": "arXiv.4"

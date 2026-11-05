@@ -3,7 +3,17 @@
     "id": "qual",
     "title": "AI for qualitative research",
     "description": "Research tools, methods & ethics",
-    "keys": ["arXiv.2", "tut.1", "arXiv.4", "j.5", "c.11", "c.17", "p.9"]
+    "keys": [
+      "arXiv.2",
+      "tut.1",
+      "arXiv.4",
+      "j.5",
+      "c.11",
+      "c.17",
+      "p.9",
+      "j.6",
+      "dc.1"
+    ]
   },
   {
     "id": "affect",
