@@ -133,8 +133,16 @@ export default function Home() {
               </div>
             )}
             <div>
-              <strong>30+</strong>
-              <span>Peer-reviewed papers</span>
+              <strong>
+                {
+                  pubs.filter((p) =>
+                    /Journal article|Conference paper|Workshop paper|Poster \/ extended abstract|Demonstration|Tutorial/.test(
+                      p.kind,
+                    ),
+                  ).length
+                }
+              </strong>
+              <span>Peer-reviewed publications</span>
             </div>
             <p>
               <a href={profile.links.scholar}>Google Scholar ↗</a>
@@ -154,8 +162,9 @@ export default function Home() {
           </div>
           <div className="about-body">
             <p className="lead">
-              I design and study human-centered AI systems, with a focus on
-              qualitative research, accessibility, and everyday interactions.
+              I develop and evaluate LLM-based and multimodal agents that
+              support research and decision-making, with a focus on reliability
+              and human oversight.
             </p>
             <p>
               I am a Ph.D. candidate at Penn State, advised by Distinguished
@@ -163,8 +172,10 @@ export default function Home() {
               Socially Responsible Artificial Intelligence.
             </p>
             <p>
-              My work explores how people use and make sense of AI, and how
-              these systems can support human agency, privacy, and trust.
+              My work spans AI-supported interviewing and qualitative coding,
+              multimodal interaction, accessibility, and the safety of AI agents
+              in everyday settings. I combine system building, computational
+              evaluation, and empirical studies with people.
             </p>
             <details className="bio">
               <summary>

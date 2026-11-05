@@ -1,9 +1,31 @@
 {
   "publications": [
     {
+      "id": "pub-j6",
+      "title": "Harnessing the Power of AI in Qualitative Research: Role Assignment, Engagement, and User Perceptions of AI-Generated Follow-Up Questions in Semi-Structured Interviews",
+      "kind": "[j.6] · Journal article · 2026",
+      "authors": "Zhang, H., Liu, Y., Guan, X., Cai, J., & Carroll, J. M.",
+      "venue": "International Journal of Human–Computer Studies · Online 2026 · Vol. 219, 103950 (2027 issue)",
+      "note": "Examines role assignment, engagement, and user perceptions when AI generates follow-up questions for semi-structured interviews.",
+      "url": "https://doi.org/10.1016/j.ijhcs.2026.103950",
+      "tags": ["AI4Qual", "human–AI interaction", "interviewing"],
+      "selected": true
+    },
+    {
+      "id": "pub-dc1",
+      "title": "Beyond Assistance: How LLMs Reshape Thinking, Learning, and Work in Qualitative Research",
+      "kind": "[dc.1] · Doctoral consortium · 2026",
+      "authors": "Zhang, H.",
+      "venue": "ACM IMX 2026 Doctoral Consortium",
+      "note": "Doctoral consortium contribution on LLM-supported qualitative research.",
+      "url": "",
+      "tags": ["AI4Qual"],
+      "selected": false
+    },
+    {
       "id": "pub-c14",
       "title": "VR Calm Plus: Coupling a Squeezable Tangible Interaction with Immersive VR for Stress Regulation",
-      "kind": "[c.14] · Conference paper · 2026",
+      "kind": "[c.12] · Conference paper · 2026",
       "authors": "Zhang, H., Li, X., Zhou, X., & Fu, X.",
       "venue": "CHI 2026",
       "note": "A 40-participant study of tangible interaction and immersive VR, examining positive affect and perceived relaxation.",
@@ -27,9 +49,9 @@
       "title": "PromptShield Home: Ambient Multimodal Prompt Injection Defense for Smart-Home Agents✦",
       "kind": "[p.10] · Poster / extended abstract · 2026",
       "authors": "Zhang, H., Li, F., Long, D., Cui, Y., Zhang, P., Zhang, Y., Xu, Q., & Fu, X.",
-      "venue": "ACM UbiComp 2026 Companion · led a five-student team across five institutions",
+      "venue": "ACM UbiComp 2026 Companion · Best Poster Award Runner-Up",
       "note": "Ambient prompt injection is a new attack surface — text printed on a box in the kitchen can hijack a home agent. This builds and evaluates a defence against it.",
-      "url": "",
+      "url": "https://doi.org/10.1145/3798063.3837198",
       "tags": ["AI safety", "agentic AI", "smart home"],
       "selected": true
     },
@@ -58,7 +80,7 @@
     {
       "id": "pub-c9",
       "title": "Augmenting Image Annotation: A Human–LMM Collaborative Framework for Efficient Object Selection and Label Generation",
-      "kind": "[c.9] · Conference paper · 2025",
+      "kind": "[w.1] · Workshop paper · 2025",
       "authors": "Zhang, H., Fu, X., & Carroll, J. M.",
       "venue": "ICLR 2025 Workshop on Bidirectional Human–AI Alignment · Oral at CHI ’25",
       "note": "A division of labour for annotation: the model proposes objects and labels, the human arbitrates — faster and better calibrated than either alone.",
@@ -135,7 +157,7 @@
     {
       "id": "pub-pat1",
       "title": "A Human-Machine Interaction System for Smart Home Environments, and Its Application Method",
-      "kind": "[pat.1] · Patent · 2023",
+      "kind": "[pat.1] · Patent · 2022",
       "authors": "Fu, X., Xu, Y.-Q., Zhang, H., Xue, C., Sun, Z., Gao, Y., & He, S.",
       "venue": "Patent, China, CN115291718A",
       "note": "The human–machine interaction layer for the smart-home environment, filed as a patent.",
@@ -159,16 +181,16 @@
       "title": "Smart Home Comprehensive Experiment System and Data Processing Method",
       "kind": "[pat.2] · Patent · 2022",
       "authors": "Fu, X., Xu, Y.-Q., Zhang, H., Xue, C., He, S., Sun, Z., & Gao, Y.",
-      "venue": "Patent, China, 2022-09",
-      "note": "The testbed and its data-processing method, filed as a patent.",
-      "url": "",
+      "venue": "China Patent CN115268287B · Granted August 6, 2024 · Filed 2022",
+      "note": "The smart-home testbed and its data-processing method, covered by a granted Chinese patent.",
+      "url": "https://patents.google.com/patent/CN115268287B/en",
       "tags": ["smart home"],
       "selected": false
     },
     {
       "id": "pub-c15",
       "title": "Comparative Analysis of Human vs. AI-powered Support in VRChat Communities on Discord: User Engagement, Response Dynamics and Interaction Patterns",
-      "kind": "[c.15] · Conference paper · 2026",
+      "kind": "[c.13] · Conference paper · 2026",
       "authors": "Zhang, H., Kim, B., Carroll, J. M., & Cai, J.",
       "venue": "IMX 2026",
       "note": "Human and AI-powered support in the same communities, side by side: engagement, response dynamics, and what changes in the exchange itself.",
@@ -179,7 +201,7 @@
     {
       "id": "pub-c16",
       "title": "Twitch Third-Party Developers’ Support Seeking and Provision Practices on Discord",
-      "kind": "[c.16] · Conference paper · 2026",
+      "kind": "[c.14] · Conference paper · 2026",
       "authors": "Cai, J., Zhang, H., Liu, Y., Carroll, J. M., & Yu, C.",
       "venue": "CSCW 2026",
       "note": "Where third-party developers go for help and how they give it — the support economy underneath the tooling economy.",
@@ -190,11 +212,11 @@
     {
       "id": "pub-c17",
       "title": "When the Interviewer Is a Bot: Behavior, Breakdowns, and Trust in MLLM-Led Interviews✦",
-      "kind": "[c.17] · Conference paper · 2026",
+      "kind": "[c.15] · Conference paper · 2026",
       "authors": "Zhang, H., Chukwuma, K., Kim, C., & Carroll, J. M.",
       "venue": "HCOMP 2026",
       "note": "When the interviewer is a machine, disclosure changes shape — what participants tell a bot, what they withhold, and how breakdowns erode trust mid-interview.",
-      "url": "",
+      "url": "https://doi.org/10.1145/3834580.3838754",
       "tags": ["AI4Qual", "trust", "agentic AI"],
       "selected": true
     },
@@ -212,18 +234,18 @@
     {
       "id": "pub-c11",
       "title": "Exploring Inductive and Deductive Qualitative Coding with AI: Investigating Inter-Rater Reliability between Large Language Model and Human Coders",
-      "kind": "[c.11] · Conference paper · 2025",
+      "kind": "[c.10] · Conference paper · 2025",
       "authors": "Zhang, H., Wu, C., Xie, J., Rubino, F., Graver, S., Cai, J., Kim, C., & Carroll, J. M.",
       "venue": "AHFE 2025",
       "note": "Measures human–LLM inter-rater reliability across both inductive and deductive coding, separating real agreement from coincidental agreement.",
-      "url": "",
+      "url": "https://doi.org/10.54941/ahfe1006232",
       "tags": ["AI4Qual", "LLM evaluation"],
       "selected": false
     },
     {
       "id": "pub-c12",
       "title": "Zero-shot Emotion Annotation in Facial Images Using Large Multimodal Models: Benchmarking and Prospects for Multi-Class, Multi-Frame Approaches✦",
-      "kind": "[c.12] · Conference paper · 2025",
+      "kind": "[w.2] · Workshop paper · 2025",
       "authors": "Zhang, H., & Fu, X.",
       "venue": "MRAC 2025",
       "note": "Benchmarks what general-purpose multimodal models can and cannot infer about emotion from faces — the empirical ceiling for a technology already deployed in hiring and education.",
@@ -366,11 +388,11 @@
     {
       "id": "pub-c13",
       "title": "Understanding Parents’ Perspectives on Responsible AI for Children’s Self-Directed Learning",
-      "kind": "[c.13] · Conference paper · 2026",
+      "kind": "[c.11] · Conference paper · 2026",
       "authors": "Xie, J., Wu, C., Wang, G., Yu, R., Zhang, H., Metoyer, R., & Chen, S.",
       "venue": "CHI 2026",
       "note": "Parents’ own criteria for responsible AI in children’s learning, which do not line up neatly with published responsible-AI principles.",
-      "url": "https://doi.org/10.48550/arXiv.2510.24070",
+      "url": "https://doi.org/10.1145/3772318.3790479",
       "tags": ["education", "trust"],
       "selected": false
     },
@@ -381,7 +403,7 @@
       "authors": "Shaffer, H., Shaikh, A., Zhang, H., & Xie, J.",
       "venue": "ASPIRE · 69th HFES Annual Meeting, 2026",
       "note": "An assistive navigator that hides its uncertainty is more dangerous than one that admits it; this asks how a system should say “I am not sure” usefully.",
-      "url": "",
+      "url": "https://doi.org/10.1177/10711813261484587",
       "tags": ["accessibility", "trust"],
       "selected": false
     },
@@ -399,7 +421,7 @@
     {
       "id": "pub-c10",
       "title": "AI Trust Reshaping Administrative Burdens: Understanding Trust-Burden Dynamics in LLM-Assisted Benefits Systems",
-      "kind": "[c.10] · Conference paper · 2025",
+      "kind": "[c.9] · Conference paper · 2025",
       "authors": "Jo, J., Zhang, H., Cai, J., & Goyal, N.",
       "venue": "FAccT 2025",
       "note": "Trust and administrative burden are coupled: an LLM assistant can cut learning costs in a benefits system while quietly relocating burden somewhere else.",
@@ -479,6 +501,14 @@
   ],
   "news": [
     {
+      "date": "Oct 2026",
+      "text": "Our study of AI-generated follow-up questions in semi-structured interviews is available online in the International Journal of Human–Computer Studies."
+    },
+    {
+      "date": "Oct 2026",
+      "text": "PromptShield Home received the UbiComp 2026 Best Poster Award Runner-Up."
+    },
+    {
       "date": "Aug 2026",
       "text": "I’ll serve as Associate Chair for the CHI 2027 Full Paper Track."
     },
@@ -488,7 +518,7 @@
     },
     {
       "date": "Jul 2026",
-      "text": "PromptShield Home was accepted to UbiComp 2026; I’ll present it in Shanghai in October. I led the five-student team across five institutions."
+      "text": "PromptShield Home appeared in the UbiComp 2026 Companion. I led the five-student team across five institutions."
     },
     {
       "date": "Jun 2026",
@@ -504,7 +534,7 @@
     },
     {
       "date": "2026",
-      "text": "Two more acceptances: HCOMP on MLLM-led interviews and CSCW on Twitch developers, both presenting this autumn."
+      "text": "When the Interviewer Is a Bot appears at HCOMP 2026; our study of Twitch developers’ support practices is accepted to CSCW 2026."
     },
     {
       "date": "2026",
@@ -557,7 +587,7 @@
       {
         "when": "2025 – 2026",
         "what": "Invited guest lecturer",
-        "det": "5 lectures at 4 institutions across 3 countries — Penn State, San José State, Tsinghua, FGV EBAPE (Brazil)"
+        "det": "Talks and lectures at Penn State, San José State, Tsinghua, FGV EBAPE, and the AAIS Digital Health Virtual Community"
       },
       {
         "when": "2025 – 2026",
@@ -652,7 +682,7 @@
   "experience": [],
   "education": [
     {
-      "when": "2022–Present",
+      "when": "2022–Expected Spring 2027",
       "what": "Ph.D. in Informatics",
       "det": "The Pennsylvania State University · Advisor: John M. Carroll"
     },
@@ -669,6 +699,16 @@
   ],
   "awards": [
     {
+      "when": "2026",
+      "what": "UbiComp Best Poster Award Runner-Up",
+      "det": "PromptShield Home · First author"
+    },
+    {
+      "when": "2026",
+      "what": "ACM IMX Student Travel Grant",
+      "det": "EUR 1,000"
+    },
+    {
       "when": "2025",
       "what": "Ph.D. Student Award for Research Excellence",
       "det": "Penn State College of Information Sciences and Technology"
@@ -681,7 +721,7 @@
     {
       "when": "2023",
       "what": "Big Ideas Grant · Co-Principal Investigator",
-      "det": "Penn State · $49,935 seed funding"
+      "det": "Penn State · $49,934 seed funding"
     },
     {
       "when": "2025–2026",
