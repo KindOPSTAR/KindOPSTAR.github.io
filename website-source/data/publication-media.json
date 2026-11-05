@@ -1,4 +1,14 @@
 {
+  "pub-tut1": {
+    "src": "/research/ai4qual-badge.png",
+    "width": 720,
+    "height": 720,
+    "alt": "Blue and gold AI4Qual tutorial badge with a magnifying glass, conversation bubbles, audio and image symbols, and ACM IUI 2026 lettering",
+    "caption": "AI4Qual · ACM IUI 2026 tutorial badge",
+    "sourceUrl": "https://sites.google.com/view/ai4qual-iui2026/",
+    "sourceLabel": "Tutorial website",
+    "credit": "AI4Qual artwork supplied by He “Albert” Zhang."
+  },
   "pub-j6": {
     "src": "/research/pub-j6.webp",
     "width": 1361,
