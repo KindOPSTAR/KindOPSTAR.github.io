@@ -6,7 +6,7 @@ import PublicationFigure from '@/components/publication-figure';
 const metricsDate = new Date(
   scholar.asOf + (scholar.asOf.length === 7 ? '-01' : '') + 'T00:00:00Z',
 ).toLocaleDateString('en-GB', {
-  day: scholar.lastSuccessfulSync ? 'numeric' : undefined,
+  day: scholar.asOf.length === 10 ? 'numeric' : undefined,
   month: 'long',
   year: 'numeric',
   timeZone: 'UTC',
@@ -144,14 +144,12 @@ export default function Home() {
               </strong>
               <span>Peer-reviewed publications</span>
             </div>
-            <p>
+            <p className="metrics-source">
               <a href={profile.links.scholar}>Google Scholar ↗</a>
-              <br />
-              <time dateTime={scholar.lastSuccessfulSync || scholar.asOf}>
-                {metricsDate} UTC
-              </time>
-              <br />
-              Checked monthly
+              <span aria-hidden="true">·</span>
+              <span>
+                Updated <time dateTime={scholar.asOf}>{metricsDate}</time>
+              </span>
             </p>
           </div>
         </section>
