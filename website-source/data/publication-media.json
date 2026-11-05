@@ -1,4 +1,14 @@
 {
+  "pub-j6": {
+    "src": "/research/pub-j6.webp",
+    "width": 1361,
+    "height": 485,
+    "alt": "Study procedure showing the AI, co-researcher, host interviewer, and interviewee, with AI-generated follow-up questions relayed by the co-researcher",
+    "caption": "Figure 1 · AI-driven / reverse Wizard-of-Oz interview study procedure",
+    "sourceUrl": "https://doi.org/10.1016/j.ijhcs.2026.103950",
+    "sourceLabel": "Paper figure",
+    "credit": "Figure by He Zhang (Albert), Yueyan Liu, Xin Guan, Jie Cai, and John M. Carroll. Cropped from Figure 1 in the authors’ manuscript."
+  },
   "pub-c14": {
     "src": "/research/pub-c14.webp",
     "width": 1060,
