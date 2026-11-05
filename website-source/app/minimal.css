@@ -172,14 +172,15 @@ h1 span {
   font-size: 10px;
   color: #666;
 }
-.metrics > p {
+.metrics-source {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
   margin-left: auto;
 }
-.metrics > p br {
-  display: none;
-}
-.metrics > p time {
-  margin: 0 6px;
+.metrics-source > span:last-child {
+  white-space: nowrap;
 }
 /* One continuous canvas: focus reshapes the map without replacing its content. */
 h2 {
